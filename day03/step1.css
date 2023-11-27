@@ -75,3 +75,34 @@
     
     box-sizing: content-box;    /* border+pabbing 사이즈 포함 */
 }
+
+/* span으로 해보기 */
+div{
+    border: solid 1px red;
+    margin: 20px;
+    background-color: bisque;
+}
+span{ background-color: orange; }
+
+.s1{
+    display: inline;        /* 인라인 */
+    width: 200px; height: 200px;    /* 가로, 세로 사이즈 적용불가*/
+}
+.s2{
+    display: block;         /* 블록 */
+    width: 200px; height: 200px;    /* 가로, 세로 사이즈 적용가능*/
+}
+.s3{
+    display: inline-block;  /* 인라인-블록 */
+    width: 200px; height: 200px;    /* 가로, 세로 사이즈 적용가능*/
+}
+.s4{
+    display: none;          /* 숨기기 */
+    width: 200px; height: 200px;
+}
+
+/* div로 해보기 */
+.d1{display: inline; width: 200px; height: 200px;}
+.d2{display: block; width: 200px; height: 200px;}   /* 블록 : div기본값 */
+.d3{display: inline-block; width: 200px; height: 200px;}
+.d4{display: none; width: 200px; height: 200px;}

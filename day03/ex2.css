@@ -1,0 +1,44 @@
+/* 선택자 활용 */
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.title{
+    border-left: 10px solid green;
+    padding-left : 10px;
+}
+.content{
+    background-color: #e8E8E8;  /* 배경색 */
+    width: 500px;
+    height: 250px ;
+    border:2px solid gray;        /* 테두리 */
+    border-radius: 10px;            /* 둥근모서리 */
+    padding: 40px ;                 /* 안쪽여백 */
+    text-align: left;
+    margin: auto 0;
+}
+
+.contli{
+    line-height: 140%;
+    padding-bottom: 20px;           /* 아래쪽 여백 */
+}
+
+.ex{
+    border-bottom: 1px dotted gray;
+    font-size: 17px;
+    padding-bottom: 20px;
+    line-height: 160%;
+
+}
+.info{
+    width: 300px;
+    border:2px solid gray;        /* 테두리 */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 40px;
+}
+
+.ex2{
+    text-align: right;   
+}

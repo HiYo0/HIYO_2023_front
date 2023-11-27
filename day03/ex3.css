@@ -1,0 +1,26 @@
+body{
+    line-height: 1%;
+}
+.img1{
+    width: 300px;
+}
+h3{
+    font-size: 40px;
+    color: orange;
+}
+
+.font1{
+    font-size: 20px;
+    color: black;
+}
+.font2{
+    color: orange;
+}
+ul{
+    width: 500px;
+    height: 80px;
+    background-color: darkslateblue;
+    color: white;
+    padding: 10px 20px;
+    line-height: 30%;
+}
