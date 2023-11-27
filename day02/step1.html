@@ -1,88 +1,98 @@
-<!-- 주석 -->
-<!-- 
-    VScode 에디터 자동완성 : Ctrl + 스페이스바
-        - 코드 추천
- -->
+<!-- 주석 : 코드설명 작성할때 -->
+<!--
+    VScode 에디터 자동완성 : ctrl+스페이바
+        - 코드 추천 
+-->
 
 <!DOCTYPE html> <!-- HTML5 버전 선언 -->
+
 <html>          <!-- HTML 시작 -->
-<head>          <!-- HTML 문서의 다양한 정보를 작성 태그 -->
-    <meta charset='utf-8'>  <!-- 한글지원 -->
-    <title>Page Title</title> <!-- 페이지의 제목 -->
 
-</head> <!-- HTML 옵션 정보 END -->
-<body>  <!-- HTML 내용물 -->
-    
-    <!-- 
-        상대경로 : 현재 파일 기준으로부터 불러올 파일의 위치
-            ../         : 위로 이동 ( 상위폴더로 이동)
-                ex) ../폴더명/파일명    : 상위폴더 이동후 해당폴더안에 있는 파일위치
+    <head>      <!-- HTML 옵션 정보 -->
+        <meta charset='utf-8'> <!-- 한글 지원 -->
+        <title> 페이지 제목 </title>    <!-- 페이지 제목 -->
+    </head>     <!-- HTML 옵션 정보 END -->
 
-            ./ or 생략  : 현재위치
-
-        절대경로 : 
-            C:\Users\504\Desktop\HIYO_2023_front\day01\capynom.png
-     -->
-
-    <!-- 1. 이미지 출력 -->
-    <img src="../capynom.png"/>         <!-- 상위폴더내 파일 -->
-    <img src="../day01/capynom.png"/>   <!-- 상위폴더내 day01폴더안의 파일 -->
-
-    <!-- 2. 음성 파일 출력 -->
-    <audio src="오디오.mp3" controls autoplay></audio>
-
-    <!-- 3. 영상 파일 출력 -->
-    <video src="동영상.mp4" controls autoplay muted></video>
-    
-    <!-- 4. 외부 멀티미디어[ 퍼가기 ] 출력 -->
-        <!-- 유튜브 퍼가기 -->
-    <iframe width="350" height="300" src="https://www.youtube.com/embed/zwUvpwxxhiw?si=9CO8_WtgTVOr3yZC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <!-- 구글지도 퍼가기 -->
-    <iframe width="350" height="300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.372279892258!2d126.85049917645179!3d37.3100084387953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f84d2952ac7%3A0x716b425bf7af7850!2z7ZWc64yA7JWe7Jet!5e0!3m2!1sko!2skr!4v1700790245691!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    <br/><br/><br/><br/>
-    <!-- ==================== 입력 관련 태그 ==================== -->
-    <!-- 1. 입력상자 -->
-
-    <form>                              <!-- 양식(폼) START -->
-
-        <input value="유재석" readonly />              입력                               <br/>
-        <input type="text" placeholder="부서번호" disabled /> 텍스트              <!-- 텍스트 입력창 --><br/>
-        <input type="password" autofocus /> 패스워드        <!-- 패스워드 입력창 --><br/>
-        <input type="email" minlength="3" maxlength="5"/> 이메일             <!-- 이메일 입력창 --><br/>
-
-        <input type="color" /> 색상선택           <!-- 색상 입력창 --><br/>
-        <input type="date" value="2023-11-24" /> 날짜입력            <!-- 날짜 입력창 --><br/>
-        <input type="datetime-local" /> 날짜/시간 <!-- 날짜/시간 입력창 --><br/>
-        <input type="month" /> 날짜(월)           <!-- 날짜(월) 입력창 --><br/>
-        <input type="time" />           <!-- 시간 입력창 --><br/>
-        <input type="week" />           <!-- 날짜(주) 입력창 --><br/>
-        <input type="range" />          <!-- 범위 스크룰 --><br/>
-        <input type="number" />         <!-- 숫자 증가/감소 입력창 --><br/>
+    <body>      <!-- HTML 내용물 -->
         
-        <input type="file" multiple />           <!-- 첨부파일 입력창 --><br/>
+        <!--
+            상대경로 : 현재 파일 기준으로부터 불러올 파일의 위치
+                ../ : 상위 폴더로 이동 
+                    ../폴더명/파일명  : 상위폴더 이동후 해당폴더안에 있는 파일위치
+                ./ 또는 생략 : 현재 위치 
+            절대경로 
+                C:\Users\504-t\Desktop\ezen_2023B_front\capynom.png
 
-        <input type="radio" name="동의여부" checked /> 예        <!-- 원형체크버튼 [단일선택 = 여러개 *radio 타입의 name을 일치화시켜야함] -->
-        <input type="radio" name="동의여부" /> 아니오     <br/>
+            -- 에디터가 지원 
+        -->
+    
+        <!-- 1. 이미지 파일 출력 -->
+        <img src="../capynom.png" />        <!--상위폴더내 파일 -->
+        <img src="../day01/capynom.png" />  <!--상위폴더내 폴더안에 파일 -->
+        
+        <!-- 2. 음성 파일 출력 -->
+        <audio src="오디오.mp3" controls autoplay></audio>
 
-        <input type="checkbox" name="가입경로" /> 뉴스       <!-- 네모체크버튼 [복수선택 = 여러개 *checkbox타입의 name일치화] -->
-        <input type="checkbox" name="가입경로" /> 지인추천
-        <input type="checkbox" name="가입경로" /> 검색       <br/>
+        <!-- 3. 영상 파일 출력 -->
+        <video src="동영상.mp4" controls autoplay muted> </video>
 
-        <input type="button" value="일반버튼" />         <!-- 일반 버튼 입력/클릭 --><br/>
-        <input type="submit" />         <!-- 전송 버튼 입력/클릭 --><br/>
-        <input type="reset">            <!-- 초기화 버튼 입력/클릭 --><br/>
-        <br/>
+        <!-- 4. 외부 멀티미디어[퍼가기] 출력 -->
+            <!-- 유튜브 퍼가기 -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lrmDoJkZjns?si=7pSX_PsbkkNGd8SK&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <!-- 구글지도 퍼가기 -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1586.6950868457686!2d126.85248203895028!3d37.30958449302659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f26eca4e801%3A0xcc760a7a473e93bf!2z7ZWc64yA7JWe7Jet!5e0!3m2!1sko!2skr!4v1700790269505!5m2!1sko!2skr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        <textarea rows="5" cols="10"></textarea>   <!-- 긴글 텍스트 -->
-        <br/>
-        <select> <!-- 목록 상자 -->
-            <option>네이버</option>
-            <option>카카오</option>
-            <option>네이트</option>
-        </select>
-    </form>
-</body> <!-- HTML 내용물 END -->
-</html> <!-- HTML 끝 -->
 
-<!-- p.23 -->
+
+        <br/><br/><br/><br/>
+        <!--  ============================ 입력 관련 태그 ===========================  -->
+        <!-- 1. 입력상자-->
+        <form>                              <!-- 양식(폼) START -->
+            <input value="유재석" readonly />
+            <input type="text" placeholder="부서번호" disabled /> <!-- 텍스트 입력창 -->
+            <input type="password" autofocus />       <!-- 패스워드 입력창 -->
+            <input type="email" minlength="3" maxlength="5"  />          <!-- 이메일 입력창 [ submit 제출시 유효성검사 @ ] -->
+            <input type="color" />          <!-- 색상 입력창 -->
+            <input type="date" value="2023-11-24" />           <!-- 날짜 입력창 -->
+            <input type="datetime-local" />         <!-- 날짜/시간 입력창 -->
+            <input type="month" />                  <!-- 날짜(월) 입력창 -->
+            <input type="time" />                   <!-- 시간 -->
+            <input type="week" />                   <!-- 주 -->
+            <input type="range" />                  <!-- 범위 스크롤 -->
+            <input type="number" />                 <!-- 숫자 증가/감소 입력창 -->
+            <input type="file" multiple />          <!-- 첨부파일 입력 -->
+
+            <br/>
+            <input type="radio" name="동의여부" checked /> 예           <!-- 원형체크버튼[단일선택 = 여러개 radio 타입의 name 일치화] -->
+            <input type="radio" name="동의여부"  /> 아니요
+            
+            <br/>
+            <input type="checkbox" name="가입경로" /> 뉴스      <!-- 네모체크버튼[복수선택 = 여러개 checkbox타입의 name 일치화]-->
+            <input type="checkbox" name="가입경로" checked /> 지인추천
+            <input type="checkbox" name="가입경로" /> 검색 
+
+            <br/>
+            <input type="button" value="일반버튼" />     <!-- 일반 버튼 입력/클릭 -->
+            <input type="submit" value="회원가입" />     <!-- 전송/제출 버튼 입력/클릭 -->
+            <input type="reset" />      <!-- 초기화 버튼 입력/클릭 -->
+            
+            <br/>
+            <textarea rows="5" cols="10"></textarea> <!-- 긴글 텍스트 -->
+            
+            <br/>
+            <select> <!-- 목록 상자 -->
+                <option>네이버</option>
+                <option>카카오</option>
+                <option>네이트</option>
+            </select>
+
+        </form>                         <!-- 양식(폼) END -->
+
+
+
+
+
+
+    </body>     <!-- HTML 내용물 END  -->
+
+</html>         <!-- HTML END  -->

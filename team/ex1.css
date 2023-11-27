@@ -1,0 +1,20 @@
+.text1{
+    font-family: 돋움;  /* 글꼴 지정하기*/
+    font-size: 20px;    /* 글꼴 크기 */
+    font-weight: bold;  /* 글꼴 진하게 */
+}
+.center{
+    text-align: center;
+}
+
+.check{
+    word-spacing: 5px;              /* 어간 : 단어 간격 */
+    letter-spacing: 2px;            /* 자간 : 글자 간격 */
+    line-height: 160% ;             /* 줄간격 */
+    margin-left: 5px;
+}
+
+.font1{
+    font-size: 14px;    /* 글꼴 크기 */
+    padding: 5px;
+}

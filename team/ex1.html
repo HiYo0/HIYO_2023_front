@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>2일차 과제</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="ex1.css" >
+    <script src='main.js'></script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend class="center">
+                <h1><p class="center">햄버거 만족도 조사</h1>
+            </legend>
+            <p class="text1">고객명 <input class="font1" type="text" placeholder="성함을 입력해주세요."/>
+            주문하신 제품
+            <select class="font1"> <!-- 카테고리 -->
+                <option>햄버거set1</option>
+                <option>햄버거set2</option>
+                <option>햄버거set3</option>
+            </select>
+            </p>
+
+            <hr>
+            <p>
+                <!-- 1번째 질문 -->
+                <!--  -->
+                <!--  -->
+                <h3>Q1. 매장 전체적인 분위기에 만족하셧습니까?</h3>
+                
+                    <input type="radio" name="매장분위기"  /> 매우그렇다
+                    <input type="radio" name="매장분위기"  /> 그렇다
+                    <input type="radio" name="매장분위기" value="보통이다"  /> 보통이다
+                    <input type="radio" name="매장분위기"  /> 아니다
+                    <input type="radio" name="매장분위기"  /> 매우아니다
+            </p>
+        
+            
+            <hr>
+            <p>
+                <!-- 2번째 질문 -->
+                
+                
+                <h3>Q2. 받으신 햄버거의 온도는 적절했습니까?</h3>
+                
+                    <input type="radio" name="버거온도"  /> 매우그렇다
+                    <input type="radio" name="버거온도"  /> 그렇다
+                    <input type="radio" name="버거온도" value="보통이다"  /> 보통이다
+                    <input type="radio" name="버거온도"  /> 아니다
+                    <input type="radio" name="버거온도"  /> 매우아니다
+            </p>
+            <hr>
+            <p>
+                <!-- 3번째 질문 -->
+                
+                
+                <h3>Q3. 귀하의 성별을 알려주시겠습니까?</h3>
+                
+                    <input type="radio" name="성별"  /> 남성
+                    <input type="radio" name="성별"  /> 여성
+                    <input type="radio" name="성별" value="비공개" /> 비공개
+            </p>
+            <hr>
+            <p>
+                <!-- 4번째 질문 -->
+                
+                
+                <h3>Q4. 귀하의 연령대를 선택해주세요.</h3>
+                
+                    <input type="radio" name="연령"  /> 18세 미만
+                    <input type="radio" name="연령"  /> 18세~24세
+                    <input type="radio" name="연령"  /> 25세~34세
+                    <input type="radio" name="연령"  /> 50세 이상
+                    <input type="radio" name="연령" value="비공개"/> 비공개
+            </p>
+            <hr>
+            <p>
+                <!-- 5번째 질문 -->
+                
+                
+                <h3>Q5. 전체적인 서비스는 만족하셧습니까?</h3>
+                
+                    <input type="radio" name="서비스"  /> 매우그렇다
+                    <input type="radio" name="서비스"  /> 그렇다
+                    <input type="radio" name="서비스" value="보통이다" /> 보통이다
+                    <input type="radio" name="서비스"  /> 아니다
+                    <input type="radio" name="서비스"  /> 매우아니다
+            </p>
+            <hr>
+            <h3>건의사항</h3>
+            <textarea cols="100" rows="6"></textarea>
+            <hr>
+
+            <p>
+                작성일자 <input type="date">
+                작성시간 <input type="time">
+            
+                <input type="submit" value="제출하기" />
+                <input type="reset" value="다시작성하기"/>
+                
+            </p>
+        </fieldset>
+    
+    </form>
+</body>
+</html>
