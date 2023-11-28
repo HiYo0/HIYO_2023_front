@@ -76,7 +76,96 @@ a{text-decoration: none; color: black;}     /* a 태그의 색상변경과 밑�
         justify-content: space-between;
     }
     #footer_box2 p{font-weight: bold;}
-
+    a{color: black; text-decoration: none;} /* 태그의 색상, 밑줄 제거 */
+    p{margin: 0px 0px; padding-left: 10px;} /* p [기본]마진 0 패딩 10px */
+    
+    #main{
+        width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+    /* =====================사이드 메뉴 시작===================== */
+    
+    #aside{width: 250px;}
+    
+    #aside h3{
+        background-color: #0CA9A3;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    #aside h4{
+        border-top: 2px solid #707070;
+        border-bottom: 2px solid #F4F4F4;
+        padding: 10px;
+    }
+    
+    #side_menu li{padding: 10px;}
+    
+    /* =====================사이드 메뉴 끝===================== */
+    
+    /* =====================본문 시작===================== */
+    
+    /* 큰 article로 정렬 padding 10px */
+    #article{
+        display: flex;
+        padding: 10px;
+    }
+    
+    /* article_1로 블록화 왼쪽margin 10px */
+    #article_1{
+        width: 500px;
+        margin-left: 10px;
+    }
+    
+        /* =====h2태그 규격=====  */
+        #article_1 h2{
+            border-bottom: 2px solid #707070;
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+    
+    /* 알림, 게시판 내용 정렬 아래margin 60px */
+    #alarm{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    
+    /* 알림, 게시판 내용 아래padding 10px */
+    #alarm li{padding-bottom: 10px;}
+    
+    /* article_2로 블록화 왼쪽margin 10px */
+    #article_2{
+        width: 500px;
+        margin-left: 10px;
+    }
+    
+        /* =====h2태그 규격=====  */
+        #article_2 h2{
+            border-bottom: 2px solid #707070;
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+    
+    /* 알림, 게시판 내용 아래padding 10px */
+    #board li{padding-bottom: 10px;}
+    
+    /* 이미지 상하padding 10px */
+    img{padding: 0px 10px;}
+    
+    /* 빵 사진 정렬 아래margin 30px */
+    #donut{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+    
+    /* =====================본문 끝===================== */
 /* 헤더푸터1명 본문1명  */
 /* 레이아웃 */
 /* 컨텐츠사이즈 */
