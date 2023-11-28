@@ -35,6 +35,13 @@ a{text-decoration: none; color: black;}     /* a 태그의 색상변경과 밑�
     width: 700px;
 }
 
+/* #main_img{display: block; margin: 0 auto;} */
+#main_img{
+    width: 100%; height: 250px;
+    background-image: url("img/main_img.png");  /* 배경에 이미지 삽입 : 사이즈 필수 */
+    background-repeat: no-repeat;   /* 자리가 남으면 채우기 repeat[기본값] */
+    background-position: center;    /* 배경을 가운대로 */
+}
 
 #main{
     width: 1280px;
@@ -44,10 +51,11 @@ a{text-decoration: none; color: black;}     /* a 태그의 색상변경과 밑�
     justify-content: space-between;
 }
 
+
 #aside{width: 250px;}           /* 사이드바 */
     #category{font-weight: bold;}
     #aside h3{
-        background-color: rgb(0, 114, 129);
+        background-color: #516E7F;
         color: white;
         padding: 12px;
     }
@@ -72,6 +80,7 @@ a{text-decoration: none; color: black;}     /* a 태그의 색상변경과 밑�
     background-color:#2C2A29;
     height: 100px; margin-top: 20px;
     color: white;
+    font-weight: bold;
 }
     #footer_box{
         display: flex;

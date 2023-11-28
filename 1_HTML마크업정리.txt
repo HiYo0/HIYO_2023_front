@@ -1,12 +1,9 @@
-HTML : 하이퍼텍스트 마크업 언어 ( HyperText Markup Language)
-
+HTML : 하이퍼텍스트 마크업 언어( HyperText Markup Language )
     HTTP : HTML(하이퍼텍스트 전송 프로토콜) 통신 규약
-        -HTML 전송 규약
-
-
+        - HTML을 전송할때 사용되는 규약 
 
 마크업 이란 
-    - 컴퓨터가 기능을 이해할수있는 HTML의 문법
+    - 컴퓨터가 기능을 이해할수있는 HTML의 *문법
     규칙 : <마크업> ~내용물~ </마크업>
     예외 : <br /> , <img /> 등
     속성(부가기능) : <마크업 속성명 = "값"> ~내용물~ </마크업>
@@ -20,8 +17,8 @@ HTML : 하이퍼텍스트 마크업 언어 ( HyperText Markup Language)
     - 제목 마크업
 2. <p>
     - 단락 마크업
-3. <br/>
-    -  줄바꿈
+3. <br/> 
+    -  줄바꿈 
 3. <hr/>
     - 가로 구분선 
 
@@ -147,16 +144,16 @@ HTML : 하이퍼텍스트 마크업 언어 ( HyperText Markup Language)
     - 필드 제목 
         <legend> </legend>
 
-12.
+12. 
     <div>
-
+    
     <span>
 
-13. 레이아웃용 시멘틱 태그
-    1. <header>                     <div id="header">
-    2. <nav>                        <div id="nav">
-    3. <main>                       <div id="main">
-    4. <article>            vs      <div id="article">
-    5. <aside>                      <div id="aside">
-    6. <footer>                     <div id="footer">
-    7. <section>                    <div id="section">
+13. 레이아웃용 시맨틱 태그 
+    1. <header>                         <div id="header">
+    2. <nav>                            <div id="nav">
+    3. <main>                           <div id="main">
+    4. <article>                vs      <div id="article">
+    5. <aside>                          <div id="aside">
+    6. <footer>                         <div id="footer">
+    7. <section>                        <div id="section">
