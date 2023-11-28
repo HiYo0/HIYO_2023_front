@@ -1,0 +1,52 @@
+*{/* 임시 테두리 */
+    border: 2px solid green;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#webrap{
+    width: 900px;   /* 가로 사이즈 */
+    margin: 50px auto; /* 박스 가운대정렬 */
+}
+header{
+    background-color: pink;
+}
+nav{
+    background-color: beige;
+}
+main{
+    background-color: orange;
+    display: flex;
+    flex-wrap: nowrap;
+    /* 900px */
+}
+article{
+    width: 600px;   /* 부모 900px에서 600px 사용 */
+}
+aside{
+    width: 300px;   /* 부모 900px에서 300px 사용 */
+}
+footer{
+    background-color: rgba(128, 128, 128, 0.9);
+}
+
+#header{
+    background-color: pink;
+}
+#nav{
+    background-color: beige;
+}
+#main{
+    background-color: orange;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#article{
+    width: 600px;
+}
+#aside{
+    width: 300px;
+}
+#footer{
+    background-color: rgba(128, 128, 128, 0.9);
+}

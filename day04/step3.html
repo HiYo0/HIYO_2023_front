@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>4일차 웹사이트 영역구분</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='step3.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- p.76 : 시맨틱 태그 O : 태그의 의미부여 -->
+    <div id="webrap">
+        <header>    <!-- 페이지 도입부 영역 -->
+            헤더
+            <nav>메뉴</nav> <!-- 다른 페이지로 이동할 수 있는 링크모음 -->
+        </header>
+        
+        <main>      <!-- 페이지 주요정보가 있는 영역 -->
+            
+            <article>   <!-- 게시글 -->
+                기사문
+                <section> 내용구역1 </section>
+                <section> 내용구역2 </section>
+                <section> 내용구역3 </section>
+            </article>
+            <aside>     <!-- 보조정보 배치영역 -->
+                사이드바
+            </aside>
+        </main>
+        <footer>푸터</footer>   <!-- 저작권표시나 문의처등 배치영역 -->
+    </div>
+
+    
+    <!-- p.76 : 시맨틱 태그 X -->
+    <div id="webrap">
+        <div id="header">
+            헤더
+            <div id="nav">내비</div>
+        </div>
+        <div id="main">
+            <div id="article">
+                기사문
+                <div> 내용구역 1 </div>
+                <div> 내용구역 2 </div>
+                <div> 내용구역 3 </div> 
+            </div>
+            <div id="aside">사이드바</div>
+        </div>
+        <div id="footer">푸터</div>
+    </div>
+</body>
+</html>
