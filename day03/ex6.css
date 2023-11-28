@@ -1,12 +1,16 @@
 body{
     text-align: center;
     width: 400px;
-    
+
 }
 
 .img{/* 로그이미지 */
     width: 120px;
     padding-bottom: 15px;
+    padding-top: 50px;
+}
+#mainform{
+    
 }
 .form1{/* 카카오로그 */
     border: 1px solid rgb(211, 211, 211);
