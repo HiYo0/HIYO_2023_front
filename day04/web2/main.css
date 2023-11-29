@@ -3,7 +3,7 @@
     border: 2px solid green;
     padding: 10px;
 } */
-li{list-style-type: none;}                    /* 글머리 제거 */
+li{list-style-type: none; padding: 0px; margin: 0px;}                    /* 글머리 제거 */
 a{text-decoration: none; color: black;}     /* a 태그의 색상변경과 밑줄제거 */
 
 #header{    /* 헤더 */
@@ -44,10 +44,6 @@ a{text-decoration: none; color: black;}     /* a 태그의 색상변경과 밑�
     background-position: center;    /* 배경을 가운대로 */
 }
 
-/*  */
-/* 본문 */
-/*  */
-/*  */
 
 #footer{
     display: block;
@@ -77,7 +73,7 @@ a{text-decoration: none; color: black;}     /* a 태그의 색상변경과 밑�
     }
     #footer_box2 p{font-weight: bold;}
     a{color: black; text-decoration: none;} /* 태그의 색상, 밑줄 제거 */
-    p{margin: 0px 0px; padding-left: 10px;} /* p [기본]마진 0 패딩 10px */
+    p{margin: 20px 0px 10px 0px; } /* p [기본]마진 0 패딩 10px */
     
     #main{
         width: 1280px;
@@ -101,10 +97,18 @@ a{text-decoration: none; color: black;}     /* a 태그의 색상변경과 밑�
     #aside h4{
         border-top: 2px solid #707070;
         border-bottom: 2px solid #F4F4F4;
-        padding: 10px;
+        padding: 15px 10px;
     }
-    
-    #side_menu li{padding: 10px;}
+
+    #side_menu{
+        padding-bottom: 20px;
+    }
+    #side_menu li{
+        padding-left: 10px ;
+        padding-top: 10px; 
+        padding-bottom: 10px ;
+    }
+
     
     /* =====================사이드 메뉴 끝===================== */
     
