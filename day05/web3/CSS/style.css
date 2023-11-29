@@ -1,0 +1,42 @@
+body{
+    background-image: url(../images/bg.png);
+    /* p.94 백그라운드 이미지 */
+    
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    /* p.95 글자 관련 속성 */
+}
+
+/* p.95 헤더영역을 가운데 정렬 */
+header{
+    width: 1240px;
+    margin: 0 auto; margin-bottom: 44px;
+}
+
+/* p.96 로고 가운데 정렬 */
+h1{
+    text-align: center;
+    padding: 20px 0px 16px;
+}
+
+/* p.96 네비게이션 가로로 정렬(중요!!!!) */
+/* 상위선택자를 통해 하위선택자를 호출하는 방법 : 띄어쓰기로 구분 */
+/* header nav ul{}      헤더안 네비안 ul에 적용
+    ul{}                전체 ul 전부에 적용
+    #head_ul{}          특정ID만에 적용
+*/
+header nav ul{
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #735d48;
+    border-bottom: 2px solid #7c5d48;
+    background-color: rgba(255, 255, 255, 0.42);
+    padding: 12px 0px 10px;
+}
+header nav ul li{margin: 0 20px;}
+header nav ul li a{
+    font-size: 22px;
+    font-weight: bold;
+    color: #7c5d48;
+}
