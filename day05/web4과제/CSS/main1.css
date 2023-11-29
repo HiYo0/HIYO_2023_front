@@ -1,0 +1,136 @@
+/* header start */
+.test01{
+    
+    margin: 0 auto;
+}
+#header p a{text-decoration-line: none;
+color: black;}
+#header{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#header p{
+    width: 400;
+}
+#header p .the{
+    font-size: 30px;
+    font-weight: bold;
+    color:  blue;
+}
+#header p .studio{
+    font-weight: bold;
+}
+#topmenu{
+    text-align: right;
+    
+}
+#topmenu ul{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-weight: bold;
+    
+}
+#topmenu ul a{text-decoration-line: none;
+    color: black;
+}
+/* header end */
+
+
+
+
+/* main1 s */
+.stdio{
+    background-image: url(img/sub_intro.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    color: white;
+    text-align: center;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.introText{
+    padding: 80px 0;
+   
+    
+}
+.introName{
+    font-weight: bold;
+    margin: 5px; 
+
+}
+.img1, .img2{
+    width: 450px;
+    margin: 20px 15px 20px 15px;
+}
+
+.main1, .main2{
+    display: flex;
+    justify-content:center;
+    padding: 20px;
+   
+}
+
+.t1{
+    padding: 10px 0 0 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main2{
+    background-color: #e8e8e8;
+}
+.t2, .tx1, .tx2{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.mainTx1, .mainTx2{
+    padding: 20px 0px;   
+}
+
+.mainTx1{
+    margin-left: 20px;
+}
+
+.pt1,.pt2{
+    line-height: 120%;
+    font-size: 13px;
+    color: gray;
+    font-weight: bold;
+}
+.page2{
+    display: flex;
+    flex-direction : column;
+    margin: 0 auto;
+}
+
+
+
+/* main1 e */
+
+
+/* footer start */
+#footer{
+    
+    line-height: 160%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #292C32;
+    color: white;
+    padding: 25px;
+}
+#footer ul {
+    display: flex;
+}
+#footer h2{
+    font-size: larger;
+    font-weight: bolder;
+}
+/* footer end */

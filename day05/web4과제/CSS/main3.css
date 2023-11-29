@@ -1,0 +1,130 @@
+
+/* header start */
+.test01{
+    
+    margin: 0 auto;
+}
+#header p a{text-decoration-line: none;
+    color: black;}
+
+#header{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#header p{
+    width: 400;
+}
+#header p .the{
+    font-size: 30px;
+    font-weight: bold;
+    color:  blue;
+}
+#header p .studio{
+    font-weight: bold;
+}
+#topmenu{
+    text-align: right;
+    
+}
+#topmenu ul{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-weight: bold;
+    
+}
+#topmenu ul a{text-decoration-line: none;
+    color: black;
+}
+/* header end */
+
+/* img start */
+#studioRe{
+    box-sizing: border-box;
+    background-image: url(../web4/img/sub_reservation.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 50px 0px;
+    line-height: 160%;
+}
+#studioRe h2{
+    font-weight: 600;
+}
+/* img end */
+
+/* main start */
+#main3{
+    display: flex; 
+
+}
+#cal{display: flex;
+justify-content: center;}
+#cal{
+    margin: 0 auto;
+}
+#mtable{
+    width: 800px;
+    text-align: center;
+    padding: 20px;
+    background-color: #FCF9EA ;
+    line-height: 250%;
+
+}
+table{border: 1px solid black;
+    background-color: white;
+}
+th, td{border : 1px solid black}
+th{ background-color: gray;}
+.mSun{color: red;}
+.sun{color: red;}
+table tr th{border-bottom: 1px solid black;}
+table tr td{border-bottom: 1px solid black;}
+#table01{
+    margin: 0 auto;
+
+}
+
+#main3_info{
+    
+    padding-top: 20px;
+    padding-left: 30px;
+    line-height: 160%;
+    font-size: 21px;
+}
+.title03{ border-left: 3px solid #444444;
+    font-weight: bolder;
+    line-height: 1.6;
+    padding-left: 10px; 
+}
+.QA{
+    color: green;
+    font-weight: bolder;
+}
+
+
+/* main end */
+
+
+/* footer start */
+#footer{
+    
+    line-height: 160%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #292C32;
+    color: white;
+    padding: 25px;
+}
+#footer ul {
+    display: flex;
+}
+#footer h2{
+    font-size: larger;
+    font-weight: bolder;
+}
