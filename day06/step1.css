@@ -40,4 +40,6 @@ h3{font-size: 20px; font-weight: bold; padding: 8px 0;}
     position: absolute  절대위치 : 부모의 위치 기준
     position: fixed     고정위치 : 디바이스 화면에 위치 고정
     position: sticky             : 디바이스 화면으로부터 벗어나갔을때 위치 고정
+        top, bottom, left, right
+    z-index : 우선 순서번호       : 높을수록 z축 순서 지정
 */
