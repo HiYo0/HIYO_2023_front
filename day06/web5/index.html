@@ -10,6 +10,126 @@
     <script src='main.js'></script>
 </head>
 <body>
+    <div id="warp"> <!-- 전체 레이아웃 시작 -->
+        <div id="header">   <!-- 해더 시작 -->
+            <!-- 이미지 로고 -->
+            <div id="headerLogo">
+                <a href="htts://www.naver.com">
+                    <img src="img/naverImg.png">
+                </a>
+            </div>
+        </div>              <!-- 해더 끝 -->
+
+
+            <!--  -->
+        <form id="main">     <!-- 메인시작 -->
+            <!-- 아이디 -->
+            <h5>아이디</h5>
+            <div class="inputBox">
+                <input type="text" maxlength="25" />
+                <span id="idIcon">@naver.com</span>
+            </div>
+            <!-- 비밀번호 -->
+            <h5>비밀번호</h5>
+            <div class="inputBox">
+                <input type="password" maxlength="25" />
+                <span class="inputIcon" id="pwIcon"></span>
+            </div>
+            <!-- 비밀번호 확인 -->
+            <h5>비밀번호</h5>
+            <div class="inputBox">
+                <input type="password" maxlength="25" />
+                <span class="inputIcon" id="pwConfirmIcon"></span>
+            </div>
+            <!-- 이름 -->
+            <h5>이름</h5>
+            <div class="inputBox">
+                <input type="text" maxlength="25" />
+            </div>
+            <!-- 생년월일 칸 3분할 -->
+            <h5>생년월일</h5>
+            <div id="birthbox">
+                <div class="inputBox birthY">
+                    <input type="text" maxlength="4" placeholder="년(4자)" />
+                </div>
+                <div class="inputBox birthM">
+                    <select>
+                        <option>월</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                </div>
+                <div class="inputBox birthD">
+                    <input type="text" maxlength="2" placeholder="일"/>
+                </div>
+            </div>
+            <!-- 성별 카테고리 -->
+            <h5>성별</h5>
+            <div id="inputbox">
+                <div class="inputBox">
+                    <select>
+                        <option>성별</option>
+                        <option>남</option>
+                        <option>여</option>
+                    </select>
+                </div>
+            </div>
+            <!-- 본인 확인 이메일 -->
+            <h5>본인 확인 이메일<span class="titleA"> (선택)</span></h5>
+            <div class="inputBox">
+                <input type="text" maxlength="30" placeholder="선택입력"/>
+            </div>
+            <!-- 휴대전화 세로 [국적선택(번호), 전화번호칸/인증번호 받기버튼,인증번호 입력칸] -->
+            <h5>휴대전화</h5>
+            
+            <div class="inputBox">
+                <select>    <!-- 목록상자 -->
+                    <option value="대한민국 +82">대한민국 +82</option>
+                    <option>미국</option>
+                </select>
+            </div>
+            <div id="phonBox">
+                <div class="inputBox">
+                        <input type="text" maxlength="25" />
+                </div>
+                <input type="button" value="인증번호 받기"/>
+
+            </div>
+                <div class="inputBox" id="inputAuth">
+                    <input  type="text" disabled maxlength="6" placeholder="인증번호 입력하세요" />
+                </div>
+
+            
+            <!-- 가입하기 -->
+            <input id="sigrupBtn" type="submit" value="가입하기"/>    
+        </form>              <!-- 메인 끝 -->
+
+        <div id="footer">   <!-- 푸터 시작 -->
+            <div id="footerBox">
+                <div id="ftTop">
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">책임의 한계와 법적고지</a>
+                    <a href="#">회원정보 고겍센터</a>
+                </div>
+                <div id="ftBottom">
+                    <img src="img/naverImg.png"/>
+                    <span> Copyrihgt NAVER Corp. All Right Reserced</span>
+                </div>
+            </div>
+        </div>              <!-- 푸터 끝 -->
+
+    </div>  <!-- 전체 레이아웃 끝 -->
     
 </body>
 </html>
