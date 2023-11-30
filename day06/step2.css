@@ -1,0 +1,16 @@
+#header{
+    display: flex;
+    background-color: aqua;
+    z-index: 3; /* 다른요소와 겹쳤을떄 우선순위 */
+    position: sticky;   /* 해당 요소가 가려질때 위치고정 */
+    top: 0px;
+}
+#header ul li{display: inline-block;}
+
+#popup{
+    background-color: green;
+    width: 200px; height: 200px;
+    position: fixed;    /* 위치고정 */
+    right: 5px; bottom: 10px;
+    z-index: 3;
+}
