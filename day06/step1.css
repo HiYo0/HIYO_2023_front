@@ -1,0 +1,23 @@
+/*  */
+h1{font-size: 30px; font-weight: bold; padding: 10px 0;}
+h3{font-size: 20px; font-weight: bold; padding: 10px 0;}
+
+.box{
+    width: 100px; height: 100px;
+    background-color: yellow; border: 2px solid green;
+}
+.box2{
+    position: relative; /* 위치 : relative 상대위치 */
+    top: 50px; left: 50px; bottom: 0px; right: 0px;
+    /* top, left, bottom, right : 위치 좌표 */
+    background-color: turquoise;
+}
+.box5{
+    position: absolute; /* 위치 : absolute 절대위치 */
+    top: 20px; left: 50px;
+    background-color: blue;
+}
+/* 
+    position: relative  상대위치 : 자신의 원위치로 부터
+    position: absolute  절대위치 : 부모의 위치 기준
+*/
