@@ -1,8 +1,14 @@
-body{
-    text-align: center;
-    width: 400px;
-    
+#asd{
+    display: block;
 }
+#from{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
 
 .img{
     width: 250px;
@@ -61,7 +67,9 @@ body{
     font-weight: bold;
 }
 .box1{
+    width: 400px;
     border: 1px solid rgb(211, 211, 211);
+    padding: 40px 0;
 }
 .box2{
     border: 1px solid rgb(211, 211, 211);
