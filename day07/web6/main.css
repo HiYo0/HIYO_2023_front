@@ -80,8 +80,77 @@ li{list-style-type: none;}  /* 5. 글머리 제거 */
 
 /* ==================== 본문 ==================== */
 #mainImg{width: 100%;}
-#mainWrap{width: 1620px; margin: 0 auto;}
+#mainWrap{width: 1620px; margin: 100px auto;}
+
+#mainWrap .title{
+    font-size: 20px; font-weight: bold;
+    text-align: center;
+}
+#mainWrap .comment{
+    text-align: center; color: #999999;
+    margin-top: 20px;
+}
+#mainWrap .items{
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;    /* 자리가 부족하면 줄 바꿈 */
+    justify-content: space-between;
+}
+.item{
+    width: 370px;
+    /* 한줄에 4개씩 아이템 배치 => 부모사이즈/4 */
+    margin-bottom: 100px;
+}
+.item > img{width: 100%;}
+
+.colorReview{
+    display: flex; justify-content: space-between;
+    padding: 5px;
+}
+.colorReview > .review{
+    text-align: center;
+    color: gray;
+}
+.colorReview > .color > span{
+    width: 10px; height: 10px;
+    display: inline-block;
+    border: 1px solid #e8e8e8;
+}
+
+.nameSize{
+    margin: 10px 0 20px 0;
+}
+.nameSize .prdSize{font-size: 11px; color: #999999;}
+.price > del{color: #999999;}
+.price{position: relative; margin: 10px 0px;}
+.price> .discount{
+    position: absolute;
+    right: 0px; top: 0px;
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.icon > img{width: 30px;}
 
 
 /* ==================== 푸터 ==================== */
-#footer #inner{width: 1400px; margin: 0 auto;}
+#footer{background-color: #f7f7f7;}
+
+
+#footer #inner{
+    width: 1400px; margin: 0 auto;
+    display: flex; justify-content: space-between;
+    padding: 50px 0px 70px 0px;
+}
+#footer #inner h3{
+    font-size: 20px; font-weight: bold;
+    margin: 10px 0px;
+}
+
+
+#addr{/* 하단푸터 */
+    font-family: 돋움;
+    margin: 20px 0px 50px 0px;
+    color: #999999; text-align: center;
+}
