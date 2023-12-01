@@ -1,0 +1,87 @@
+*{
+    margin: 0px; padding: 0px;  /* 1. 기본 여백제거 */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;          /* 2. 폰트 [웹폰트] */
+    box-sizing: border-box;     /* 3. 안쪽여백, 테두리를 포함한 사이즈 모델 */
+}
+a{color: black; text-decoration: none;} /* 4.a태그의 색상, 밑줄제거 */
+li{list-style-type: none;}  /* 5. 글머리 제거 */
+
+/* ==================== 헤더 ==================== */
+
+/*  #topMenu>li{display: inline-block;} */
+
+/* 상단메뉴 */
+ #topMenu{
+    display: flex;  /* 하위요서 배치 방법 */
+    flex-direction: row;    /* 가로배치[기본값] */
+    justify-content: flex-end;  /* 가로정렬 */
+    align-items: center;
+    padding: 10px; margin-right: 10px;}
+ #topMenu>li>span{padding: 5px;}
+
+/* 하단메뉴 */
+ #mainMenu{
+    display: flex;   
+    justify-content: space-between; /* 양쪽 끝에 여백 없이 */
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #DBDBDB;
+    
+    /* 스크롤 사용시 위치고정 */
+    position: sticky; top: 0px;
+    /*
+        sticky 주의할점 [전제조건]
+        1. 상위 요소의 높이 사이즈 안에서 고정*. vs fixed
+        2. 위치속성 1개이상 필수! : top,right,left,bottom
+        3. 상위 요소가 overflow 속성 사용금지
+    */
+    background-color: rgba(255, 255, 255, 0.5);
+    /*  */
+    /* opacity: 0.8;   해당구역 전체투명도 */
+}
+ #mainMenu > ul{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;   
+    width: 60%;/* 상위요소의 사이즈 100%에서 60% */
+}
+ #mainMenu >form{border-bottom: 1px solid black;}
+ #mainMenu >form>img{height: 20px;}
+ #mainMenu >form>input{         /* 검색창 */
+    border: none; padding: 10px; font-size: 16px;
+    background-color: transparent;  /* 투명색 */
+}
+*:focus{outline: none;}
+.fontRed{color: red;}
+
+
+                            /* 드랍 메뉴 */
+ #mainMenu>ul>li{
+    position: relative;
+}
+/* 드랍메뉴를 호버 했을때 서브메뉴 보이게 */
+ #mainMenu>ul>li:hover .subMenu{display: block;}
+
+/* 서브메뉴 */
+.subMenu{
+    display: none;  /* 숨기기 */
+    position: absolute;
+    top: 25%; left: -25px;
+    background-color: white;
+    margin: 20px 0; padding-top: 25px;
+    width: 100px;
+}
+.subMenu li{text-align: center; margin-bottom: 10px;}
+/* 
+    자손선택자 : 상위선택자 하위선택자
+    자식 선택자 : 상위선택자 > 하위선택자
+*/
+
+/* ==================== 본문 ==================== */
+#mainImg{width: 100%;}
+#mainWrap{width: 1620px; margin: 0 auto;}
+
+
+/* ==================== 푸터 ==================== */
+#footer #inner{width: 1400px; margin: 0 auto;}
