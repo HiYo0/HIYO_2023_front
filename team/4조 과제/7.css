@@ -14,7 +14,7 @@ a{text-decoration: none; color: black;}/* a태그 기본값 */
     border-top: 1px solid #eaeaea;
     border-bottom: 1px solid #eaeaea;
     padding: 10px 0 ;
-    margin: 0 0 100px;
+    margin: 0 auto 100px;
 }
     #imgCell7{border-right: 1px solid #eaeaea;
         padding: 0 18px 0 0;
@@ -51,4 +51,69 @@ a{text-decoration: none; color: black;}/* a태그 기본값 */
 
         .itemCondition7 img{width: 54px; padding-top: 8px;}
         .sale7{font-size: 14px; color: #474a9B;font-weight: bold;}
-        /* -----------------상품이미지 CSS------------------ */
+        
+    /* -----------------페이지이동 CSS------------------ */
+    #pageForm7{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .pageTyep7{
+        font-size: 25px;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        width: 30px; height: 30px;
+        text-align: center;}
+        .pageTyep7:hover{background-color: black; color: white;}
+    
+    .pageTyepNo7{
+        padding-top: 4px;
+        width: 30px; height: 26px;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        text-align: center;}
+        .pageTyepNo7:hover{background-color: black; color: white;}
+    #spacebar7{margin: 5px;}
+
+    /* -----------------Popup CSS------------------ */
+    #popupCell7{
+        width: 60px;
+        position: fixed;
+        right: 0px; bottom: 8%;
+    }
+        .popupForm7{
+            position: relative;
+        }
+        .popupImg7{margin-top: 10px; margin-bottom: 10px;}/* 이미지간격 */
+        
+        .popupText7{
+            position: absolute;
+            top: 35%; right: 120%;
+            font-size: 13px;
+            color: black;
+            background-color: yellow;
+            width: 40px; height: 18px;
+            border: 1px solid rgb(255, 187, 0);
+            border-radius: 5px;
+            text-align: center;
+            padding : 3px 0;
+            display: none;
+        }
+        .popupTextVer27{
+            position: absolute;
+            top: 20%; right: 120%;
+            font-size: 13px;
+            color: white;
+            background-color: rgb(83, 83, 83);
+            width: 50px; height: 18px;
+            border: 1px solid black;
+            border-radius: 5px;
+            text-align: center;
+            padding : 3px 0;
+            display: none;
+        }
+        .popupForm7:hover .popupText7{display: block;}
+        .popupForm7:hover .popupTextVer27{display: block;}
