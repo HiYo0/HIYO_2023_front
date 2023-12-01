@@ -1,0 +1,53 @@
+/* main CSS best50페이지 */
+
+a{text-decoration: none; color: black;}/* a태그 기본값 */
+
+#wrap7{     /* 페이지 총 사이즈 */
+    width: 1480px;
+    margin: 0 auto;
+}
+                                        /* BEST50 부분 */
+#cell7{     /* 맨위 전체 테두리 */
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 0 ;
+    margin: 0 0 100px;
+}
+    #imgCell7{border-right: 1px solid #eaeaea;
+        padding: 0 18px 0 0;
+    }
+    #imgBest7{width: 100%;}
+    #align7 a, span{font-size: 12px; color: #999999;}/* 글자색 */
+
+
+                          /* 메인 상품 있는부분 */
+#mainCell7{width: 100%;}
+
+    .itemForm7{
+        width: 1280px; margin: 0px auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;    /* 자리가 부족하면 줄 바꿈 */
+    }
+        /* -----------------상품이미지 CSS------------------ */
+        .itemCell7{width: 300px; margin-bottom: 80px;}       /* 이미지설정 */
+            .itemCell7 img{width: 300px;}
+        
+        .itemName7{             /* 상품이름 폰트 */
+            font-size: 12px; color: #7a7a7a;
+            margin: 0px 0px 8px; padding: 10px 0px 8px;}
+        
+        .itemQ7{                /* 상품설명 폰트 */
+            font-size: 12px; color: #c3c3c3;
+            padding: 1px 0px;}
+        
+        .itemPrice7{             /* 가격 폰트 */
+            font-size: 12px; color: #7a7a7a;
+            padding: 3px 0px;}
+
+        .itemCondition7 img{width: 54px; padding-top: 8px;}
+        .sale7{font-size: 14px; color: #474a9B;font-weight: bold;}
+        /* -----------------상품이미지 CSS------------------ */

@@ -163,7 +163,12 @@ li{list-style-type: none;}  /* 5. 글머리 제거 */
     border: 2px solid gray;
     border-radius: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+    
 #popup > li{
     width: 40px;height: 40px;
     background-color: white;
@@ -174,6 +179,7 @@ li{list-style-type: none;}  /* 5. 글머리 제거 */
 /* 팝업 아이콘 이미지 크기 */
 #popup > li > img{height: 30px;}
 
+
 #popup > li >span{
     position: absolute;
     top: 5px; right: 35px;
@@ -182,9 +188,11 @@ li{list-style-type: none;}  /* 5. 글머리 제거 */
     background-color: black; color: white;
     border-radius: 10px;
     text-align: center;
+    padding : 3px 0;
     display: none;
 }
-
 #popup > li:hover .popupSub{
     display: block;
 }
+
+
