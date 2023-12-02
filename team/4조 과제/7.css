@@ -80,32 +80,48 @@ a{text-decoration: none; color: black;}/* a태그 기본값 */
 
     /* -----------------Popup CSS------------------ */
     #popupCell7{
-        width: 60px;
+        width: 200px;
         position: fixed;
-        right: 0px; bottom: 8%;
+        right: 15px; bottom: 8%;
     }
         .popupForm7{
+            width: 200px;
             position: relative;
-            width: 100px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
         }
-        .popupImg7{margin-top: 10px; margin-bottom: 10px;}/* 이미지간격 */
+        .popupImg7{
+            margin-top: 10px; margin-bottom: 10px;
+            display: flex;
+        }/* 이미지간격 */
+        #buttonImg7{
+            margin-top: 10px; margin-bottom: 10px;
+            width: 45px;
+        }
+        #buttonImgVer27{
+            margin-top: 10px; margin-bottom: 10px;
+            width: 45px;
+            transform: rotate(180deg);
+        }
+        
         
         .popupText7{
             position: absolute;
-            top: 35%; right: 120%;
+            top: 35%; right: 17%;
             font-size: 13px;
             color: black;
             background-color: yellow;
-            width: 40px; height: 18px;
+            width: auto; height: 18px;
             border: 1px solid rgb(255, 187, 0);
             border-radius: 5px;
             text-align: center;
-            padding : 3px 0;
+            padding : 3px 5px;
             display: none;
         }
         .popupTextVer27{
             position: absolute;
-            top: 20%; right: 120%;
+            top: 30%; right: 17%;
             font-size: 13px;
             color: white;
             background-color: rgb(83, 83, 83);
@@ -120,3 +136,5 @@ a{text-decoration: none; color: black;}/* a태그 기본값 */
         }
         .popupForm7:hover .popupText7{display: block;}
         .popupForm7:hover .popupTextVer27{display: flex;}
+
+        
