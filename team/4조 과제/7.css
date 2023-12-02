@@ -86,6 +86,7 @@ a{text-decoration: none; color: black;}/* a태그 기본값 */
     }
         .popupForm7{
             position: relative;
+            width: 100px;
         }
         .popupImg7{margin-top: 10px; margin-bottom: 10px;}/* 이미지간격 */
         
@@ -108,12 +109,14 @@ a{text-decoration: none; color: black;}/* a태그 기본값 */
             font-size: 13px;
             color: white;
             background-color: rgb(83, 83, 83);
-            width: 50px; height: 18px;
+            width: auto; height: 18px;
             border: 1px solid black;
             border-radius: 5px;
             text-align: center;
-            padding : 3px 0;
+            padding : 3px 5px;
             display: none;
+            justify-content: center;
+            align-items: center;
         }
         .popupForm7:hover .popupText7{display: block;}
-        .popupForm7:hover .popupTextVer27{display: block;}
+        .popupForm7:hover .popupTextVer27{display: flex;}
