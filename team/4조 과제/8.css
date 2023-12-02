@@ -1,0 +1,32 @@
+#main8{width: 100%;}
+    
+    h1{font-size: 18px; text-align: center;
+        padding-top: 100px;padding-bottom: 60px;}
+    
+    #bar8{
+        display: flex;
+        margin: 0 auto;
+        width: 1200px; padding: 10px 0;
+        border: 1px solid #e8e8e8;
+        align-items: center;
+    }
+        /* bar텍스트 폰트 */
+        #bar8>img{border-right: 1px solid #e8e8e8;padding: 0 15px;}
+        #bar8>div{padding: 0 10px;}
+        #bar8>div>p{font-size: 12px; line-height: 140%; }
+        #bar8>div>p>span{font-weight: bold;}
+    
+    #conditionBar8{
+        width: 1200px;
+        margin: 20px auto 40px;
+        border: 1px solid #e8e8e8;
+        padding: 5px;}
+        #conditionForm8{border: 1px solid #e8e8e8; padding: 20px 0;}
+            #conditionTextBox{
+                width: 600px ;
+                margin: 0px 5px;padding: 0 45px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #textver18{width: 200px; padding-left: 10px; font-size: 12px;}
+            #textver28{width: 200px; padding: 0 10px; font-size: 12px; font-weight: bold; text-align: right;}
