@@ -1,4 +1,5 @@
-#main8{width: 100%;}
+a{color: black; text-decoration: none;}
+#main8{width: 1400px; margin: 0 auto;}
     
     h1{font-size: 18px; text-align: center;
         padding-top: 100px;padding-bottom: 60px;}
@@ -17,16 +18,166 @@
         #bar8>div>p>span{font-weight: bold;}
     
     #conditionBar8{
+        display: flex;
         width: 1200px;
         margin: 20px auto 40px;
         border: 1px solid #e8e8e8;
         padding: 5px;}
-        #conditionForm8{border: 1px solid #e8e8e8; padding: 20px 0;}
+        #conditionForm8{
+            border: 1px solid #e8e8e8;
+            padding: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
             #conditionTextBox{
-                width: 600px ;
-                margin: 0px 5px;padding: 0 45px;
+                width: 480px ;
+                margin: 5px 5px;padding: 0 45px;
                 display: flex;
-                flex-wrap: wrap;
             }
-            #textver18{width: 200px; padding-left: 10px; font-size: 12px;}
-            #textver28{width: 200px; padding: 0 10px; font-size: 12px; font-weight: bold; text-align: right;}
+                #textver18{width: 200px; padding-left: 10px; font-size: 12px;}
+                #textver28{width: 190px; padding: 0 10px; font-size: 12px; font-weight: bold; text-align: right;}
+                #conditionTextBox>a{
+                    position: relative;
+                    width: 38px;
+                    text-align: center;
+                    top: -3px;
+                    height: 16px;
+                    font-size: 12px;
+                    padding: 0 8px;
+                    padding-top: 2px;
+                    color: #656d78;
+                    border: 1px solid #ebebeb;
+                    border-bottom-color: #c6c6c6;
+                    box-shadow: 0 2px 2px rgba(0,0,0,0.04);}
+                    #conditionTextBox>a:hover{color: #999; text-decoration: none;}
+
+    #quickbar8{
+        width: 1210px; margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+        #order8{float: left;width: 30%;}
+            .quickName8{
+                font-size: 12px; font-weight: bold;
+                border-bottom:1px solid #eaeaea;
+                padding-bottom: 10px;
+            }
+                .quickName8>span{font-size: 11px; color: #999999;}
+        
+        #order28{float: left;width: 14%;}
+        #order38{float: left;width: 45%;}
+        
+            .quickForm8{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 15px 0;
+                margin: 15px 0;
+                border: 1px solid #eaeaea;
+            }
+                .quickFormImg8>img{width: 25px;}
+                .quickFormText8{font-size: 13px;}
+                .quickFormText8>p>span{font-size: 11px; color: #999999;}
+                .quickFormNum8>p{font-size: 48px; font-weight: bold;}
+            .quickForm8:hover{color: #999999;}/* 호버 */
+
+            .quickForm28{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 15px 0;
+                margin: 15px 0;
+                border: 1px solid #eaeaea;
+                background-color: #333;
+                color: white;}
+            .quickForm38{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 8px 30px;
+                margin: 15px 0;
+                border: 1px solid #eaeaea;
+                background-color: #f9f9f9;;
+                color: black;}
+                .quickFormImg38>img{width: 15px;}
+                .quickFormText38{width: 130px; font-size: 13px;}
+                .quickFormNum38>p{font-size: 20px; font-weight: bold;}
+            .quickForm38:hover{color: #999999;}/* 호버 */
+            
+            .quickMenuForm8{
+                position: relative;
+                display: flex;
+                vertical-align: baseline;
+                align-items: center;
+                padding: 15px 0;
+                margin: 15px 0;
+                border: 1px solid #eaeaea;}
+                .quickMenuFormImg8>img{width: 25px; padding: 10px 35px;}
+                .quickMenuFormText8{font-size: 13px;}
+                .quickMenuFormText8>p>span{font-size: 11px; color: #999999;}
+                .quickMenuFormNum8{
+                    position: absolute;
+                    top: 20px; right: 20px;
+                    font-size: 28px;
+                    font-weight: bold;}
+            .quickMenuForm8:hover{color: #999999;}
+
+    /* -----------------Popup CSS------------------ */
+    #popupCell7{
+        width: 200px;
+        position: fixed;
+        right: 15px; bottom: 8%;
+    }
+        .popupForm7{
+            width: 200px;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .popupImg7{
+            margin-top: 10px; margin-bottom: 10px;
+            display: flex;
+        }/* 이미지간격 */
+        #buttonImg7{
+            margin-top: 10px; margin-bottom: 10px;
+            width: 45px;
+        }
+        #buttonImgVer27{
+            margin-top: 10px; margin-bottom: 10px;
+            width: 45px;
+            transform: rotate(180deg);
+        }
+        
+        
+        .popupText7{
+            position: absolute;
+            top: 35%; right: 17%;
+            font-size: 13px;
+            color: black;
+            background-color: yellow;
+            width: auto; height: 18px;
+            border: 1px solid rgb(255, 187, 0);
+            border-radius: 5px;
+            text-align: center;
+            padding : 3px 5px;
+            display: none;
+        }
+        .popupTextVer27{
+            position: absolute;
+            top: 30%; right: 17%;
+            font-size: 13px;
+            color: white;
+            background-color: rgb(83, 83, 83);
+            width: auto; height: 18px;
+            border: 1px solid black;
+            border-radius: 5px;
+            text-align: center;
+            padding : 3px 5px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .popupForm7:hover .popupText7{display: block;}
+        .popupForm7:hover .popupTextVer27{display: flex;}
