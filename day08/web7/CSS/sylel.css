@@ -148,6 +148,32 @@ footer{
     z-index: -1;    /* 기본 요소들 보다 아래에 배치 */
 }
 
+/* p.165 트랜지션 애니메이션 */
+input[type="submit"]:hover{/* 마우스를 올렷을떄 */
+    background-color: #c7887f;
+    margin-left: 20px;
+    transition-property: background-color, margin-left;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+    transition-delay: 0ms;}
+    /* transition: all 300ms ease-in 100ms;} */
+
+/* p.167 키 프레임 애니메이션 효과 */
+@keyframes scrollAnimation{/* 1. @keyframes 사용할 애니메이션명 */
+    0%{transform: scaleY(0); transform-origin: top;}        /* 스크롤의 위치가 0 */
+    50%{transform: scaleY(1); transform-origin: top;}       /* 스크롤의 위치가 50 */
+    50.1%{transform: scaleY(1); transform-origin: bottom;}  /* 스크롤의 위치가 50.1 */
+    100%{transform: scaleY(0); transform-origin: bottom;}   /* 스크롤의 위치가 100 */
+}
+
+/* p.169 */
+header .scroll img{
+    animation-name: scrollAnimation;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
 
 /* 
     p.illust{ }     : p 요소의 class명이 illust 이면
