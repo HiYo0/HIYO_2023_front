@@ -158,20 +158,20 @@ input[type="submit"]:hover{/* 마우스를 올렷을떄 */
     transition-delay: 0ms;}
     /* transition: all 300ms ease-in 100ms;} */
 
-/* p.167 키 프레임 애니메이션 효과 */
+/* p.167 키 프레임 애니메이션 효과 설정 */
 @keyframes scrollAnimation{/* 1. @keyframes 사용할 애니메이션명 */
-    0%{transform: scaleY(0); transform-origin: top;}        /* 스크롤의 위치가 0 */
-    50%{transform: scaleY(1); transform-origin: top;}       /* 스크롤의 위치가 50 */
-    50.1%{transform: scaleY(1); transform-origin: bottom;}  /* 스크롤의 위치가 50.1 */
-    100%{transform: scaleY(0); transform-origin: bottom;}   /* 스크롤의 위치가 100 */
+    0%{transform: scaleY(0); transform-origin: top;}        /* 시작점 */
+    50%{transform: scaleY(1); transform-origin: top;}       /* 가운대 이전 */
+    50.1%{transform: scaleY(1); transform-origin: bottom;}  /* 가운대 이후 */
+    100%{transform: scaleY(0); transform-origin: bottom;}   /* 종료점 */
 }
 
-/* p.169 */
+/* p.169 키 프레임에 애니메이션 효과 적용 */
 header .scroll img{
     animation-name: scrollAnimation;
     animation-duration: 1.8s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;    /* 끝날때 빠르게 */
+    animation-iteration-count: infinite;    /* 무한루프 */
 }
 
 
