@@ -43,29 +43,37 @@
           <p class="illust"><img src="img//message_img.png" alt="카피조우와 카피코"></p>
         </div>
       </section>
-      <section id="dateArea">
+      <section class="dateSec" id="dateArea">
         <div id="innerWrap">
-          <h2>Save the Date</h2>
-          <p><img src="img//date_img.jpg" alt=""></p>
-          <p>
-            3023.8.8 Thu<br>
-            Start 18:30-
-          </p>
-          <section>
-            <h3>Access</h3>
-            <p>
-              나뭇잎길 1-2-3<br>
-              Ristorante Capita에서<br>
-              02-XXXX-XXXX<br>
-            </p>
-          </section>
+          <h2 class="ffJosefin">Save the Date</h2>
+          <div class="layoutWrap">
+            <p><img src="img//date_img.jpg" alt=""></p>
+            <!-- ====================== 텍스트 정보start ====================== -->
+            <div>
+              <p class="deteDetailSec">
+                3023.8.8<span class="word1">Thu</span><br>
+                <span class="word2">Start</span> <span class="word3">18:30-</span>
+              </p>
+              <section class="accessSec">
+                <h3>Access</h3>
+                <p>
+                  나뭇잎길 1-2-3<br>
+                  Ristorante Capita에서<br>
+                  02-XXXX-XXXX<br>
+                </p>
+              </section>
+            </div>
+            <!-- ====================== 텍스트 정보End ====================== -->
+          </div>
         </div>
       </section>
-      <section id="formArea">
+
+
+      <section class="formSec" id="formArea">
         <div id="innerWrap">
           <h2>RSVP</h2>
           <form action="" method="">  <!-- p.125 폼 -->
-            <p><!-- p.126 radio type에서는 name을 동일하게 해야 단일선택 가능. -->
+            <p class="attendRadio"><!-- p.126 radio type에서는 name을 동일하게 해야 단일선택 가능. -->
               <label><input type="radio" name="attend" value="참석" checked />참석</label>
               <label><input type="radio" name="attend" value="불참" />불참</label>
             </p>
@@ -77,17 +85,17 @@
                 <option value="초식동물">초식 동물</option>
                 <option value="육식동물">육식 동물</option>
                 <option value="인간">인간</option>
-                </select>
+              </select>
             </p>
-            <p>
+            <p class="allergyCheck">
               알레르기가 있는 음식
-              <input type="checkbox" name="allergy" value="달걀"/>달걀
-              <input type="checkbox" name="allergy" value="우유"/>우유
-              <input type="checkbox" name="allergy" value="밀"/>밀
-              <input type="checkbox" name="allergy" value="대두"/>대두
+              <label><input type="checkbox" name="allergy" value="달걀"/>달걀</label>
+              <label><input type="checkbox" name="allergy" value="우유"/>우유</label>
+              <label><input type="checkbox" name="allergy" value="밀"/>밀</label>
+              <label><input type="checkbox" name="allergy" value="대두"/>대두</label>
             </p>
             <p>메시지<textarea name="massege"></textarea></p> <!-- p.130 -->
-            <p><input type="submit" value="send"></p> <!-- p.130 -->
+            <p class="submitBtn"><input type="submit" value="send"></p> <!-- p.130 -->
           </form>
         </div>
       </section>

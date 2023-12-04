@@ -8,7 +8,7 @@ body{
     font-family: "Josefin Sans", sans-serif;
 }
 .innerWrap{/* p.138 */
-    border: 4px solid lightblue;
+    /* border: 4px solid lightblue; */
     width: 1240px;
     margin: 0 auto;
     padding: 80px 20px 0;
@@ -73,6 +73,81 @@ header nav ul li a:hover{/* 마우스 올렷을때 */
     right: 320px;
     bottom: -30px;
 }
+.dateSec{
+    background-color: #ffffff;
+    padding-bottom: 120px;
+}
+.dateSec .layoutWrap{display: flex;}
+.dateSec .layoutWrap>p{flex-basis: 735px;}
+.dateSec .layoutWrap>div{flex-basis: 465px; padding-top: 100px;}
+.dateSec .deteDetailSec{
+    font-size: 72px; margin: 0 0 170px -100px;
+    background-color: #ffffff;
+    padding: 40px 64px;
+    line-height: 120%;}
+.word1{font-size: 50px;}
+.word2{font-size: 40px;}
+.word3{font-size: 60px;}
+
+.accessSec{margin-left: 48px;}
+.accessSec h3{
+    color: #cfafa3;
+    font-size: 55px;
+    letter-spacing: .05em;
+    margin-bottom: 8px;}
+.accessSec p{line-height: 160%;}
+
+.formSec{background-color: #efe8d9;padding-bottom: 60px;}
+form{width: 600px; margin: 0 auto;}
+input[type="text"], /* input중에서 type이 'text' 이면 선택 */
+input[type="email"],
+select,
+textarea{
+    border: 1px solid #cccccc;
+    background-color: #ffffff; width: 100%;
+    width: 100%;
+    margin-top: 5px;
+    padding: 4px 8px;}
+input[type="radio"],
+input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+    vertical-align: baseline;
+    margin-right: 4px;
+}
+
+/* p.160 */
+.attendRadio{text-align: center; margin-bottom: 40px;}
+.attendRadio label{margin: 0 20px; font-size: 24px;}
+.allergyCheck{margin-right: 24px;}
+
+select{background: #ffffff url(../img/vi.png) no-repeat 98% 50%/17px 10px;}
+
+/* p.161 */
+textarea{height: 148px; margin-bottom: 30px;}
+form>p{line-height: 140%; margin-bottom: 20px;}
+
+.submitBtn{text-align: center;}
+input[type="submit"]{background-color: #121212; color: #ffffff; padding: 18px 80px;}
+
+/* p.162 */
+footer{
+    background-color: #c7887f;
+    color: #f3e9e5;
+    padding: 14px 10px 20px;
+    text-align: center;
+}
+
+/* 페럴랙스 효과 */
+.dateSec{margin-bottom: 480px;} /* 배경을 보여질 여백 */
+.dateSec::after{
+    content: "";    /* 배경을 넣을 예정이라서 내용물을 없는 상태 */
+    position: fixed;    /* 스크룰을 움직여도 고정 */
+    left: 0; top: 0; width: 100%; height: 100%;
+    background: url(../img/배경이미지.jpg) no-repeat center/cover;
+    z-index: -1;    /* 기본 요소들 보다 아래에 배치 */
+}
+
 
 /* 
     p.illust{ }     : p 요소의 class명이 illust 이면
@@ -93,4 +168,13 @@ header nav ul li a:hover{/* 마우스 올렷을때 */
         ::before    : 요소 앞부분에 내용물 가상으로 넣어주기
         ::after     : 요소 뒷부분에 내용물 가상으로 넣어주기
             content : 가상 요소의 내용물
+
+    flex-basis : 465px;
+        vs
+    width : 465px;
+        
+        차이점  : 1. flex-dirextion: colums 일떄
+                    width : 고정    flex-basis : 전체사이즈 늘어남.
+                  2. 요소보다 더 큰 컨텐츠가 들어왔을때
+                    width : 고정    flex-basis : 
 */
