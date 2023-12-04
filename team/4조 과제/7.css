@@ -65,7 +65,13 @@ a{text-decoration: none; color: black;}/* a태그 기본값 */
         color: black;
         width: 30px; height: 30px;
         text-align: center;}
-        .pageTyep7:hover{background-color: black; color: white;}
+        .pageTyep7:hover{
+            background-color: black; color: white;
+            transition-property: background-color;
+            transition-duration: 300ms;
+            transition-timing-function: ease-in;
+            transition-delay: 0ms;}
+        
     
     .pageTyepNo7{
         padding-top: 4px;
@@ -75,7 +81,11 @@ a{text-decoration: none; color: black;}/* a태그 기본값 */
         background-color: white;
         color: black;
         text-align: center;}
-        .pageTyepNo7:hover{background-color: black; color: white;}
+        .pageTyepNo7:hover{background-color: black; color: white;
+            transition-property: background-color;
+            transition-duration: 300ms;
+            transition-timing-function: ease-in;
+            transition-delay: 0ms;}
     #spacebar7{margin: 5px;}
 
     /* -----------------Popup CSS------------------ */
@@ -135,6 +145,6 @@ a{text-decoration: none; color: black;}/* a태그 기본값 */
             align-items: center;
         }
         .popupForm7:hover .popupText7{display: block;}
-        .popupForm7:hover .popupTextVer27{display: flex;}
+        .popupForm7:hover .popupTextVer27{display: block;}
 
         
