@@ -1,0 +1,244 @@
+
+
+/* 헤더 상단 s */
+#header{padding: 30px;}
+#header_main{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.h_t_l{
+    width: 300px;
+    display: flex;
+    margin: 3px;
+    font-size: 12px;
+    align-items: center;
+}
+
+#header div a{
+    color: black;
+    text-decoration: none;
+}
+
+.h_t_r{
+    width: 300px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+.h_logo{display: block;
+    margin: 0 auto;
+    width: 1100px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+
+}
+/* 헤더 상단 e */
+/* 헤더 카테고리 메뉴 s */
+#h_menu{width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: 12px;
+}
+#h_menu >ul{display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#h_menu ul li:hover .subMenu{
+    display: block;
+    background-color: aliceblue;
+    
+}
+.subMenu{
+    display: none;
+    position: absolute;
+    top: 30px;  
+}
+#h_menu ul li .subMenu{
+    line-height: 160%;
+}
+
+/* 헤더 카테고리 메뉴 e */
+
+#main_pagelogo{
+    width: 1100px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+#mainWrap{width: 1100px; margin: 0 auto;}
+
+.item_s{
+
+}
+
+.item_c ul{
+    display: flex;
+    justify-content: space-between;
+}
+.item_c ul li{
+    width: 350px;
+    padding: 30px;
+}
+.item_c img{
+    width: 100%; 
+}
+
+#mainWrap .title{font-weight: bold; text-align: center;}
+#mainWrap .comment{text-align: center; padding-top: 10px; padding-bottom: 30px;}
+
+
+
+.item_info{width: 265px; margin-bottom: 50px;}
+.item_info img{width: 100%;}
+
+.prdName a{color: #7A7A7A; text-decoration-line: none;}
+.prdName{padding-bottom: 20px;}
+
+.comment_unit,.price{color: gray;}
+.comment_unit{padding-bottom: 10px; font-size: 13px;}
+
+.price{font-size: 20px; padding-bottom: 5px;}
+.icon{width: 40px; display: flex;}
+#item_list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#popupCell7{
+    width: 200px;
+    position: fixed;
+    right: 15px; bottom: 8%;
+}
+    .popupForm7{
+        width: 200px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .popupImg7{
+        margin-top: 10px; margin-bottom: 10px;
+        display: flex;
+    }/* 이미지간격 */
+    #buttonImg7{
+        margin-top: 10px; margin-bottom: 10px;
+        width: 45px;
+    }
+    #buttonImgVer27{
+        margin-top: 10px; margin-bottom: 10px;
+        width: 45px;
+        transform: rotate(180deg);
+    }
+    
+    
+    .popupText7{
+        position: absolute;
+        top: 35%; right: 17%;
+        font-size: 13px;
+        color: black;
+        background-color: yellow;
+        width: auto; height: 18px;
+        border: 1px solid rgb(255, 187, 0);
+        border-radius: 5px;
+        text-align: center;
+        padding : 3px 5px;
+        display: none;
+    }
+    .popupTextVer27{
+        position: absolute;
+        top: 30%; right: 17%;
+        font-size: 13px;
+        color: white;
+        background-color: rgb(83, 83, 83);
+        width: auto; height: 18px;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-align: center;
+        padding : 3px 5px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .popupForm7:hover .popupText7{display: block;}
+    .popupForm7:hover .popupTextVer27{display: flex;}
+
+
+
+
+/* footer st */
+#footer{background-color: white;  margin: 0 auto;
+    border-top: 1px solid gray;
+}
+
+#footer .ftInner {
+    width: 1100px; margin: 0 auto;
+}
+
+.footer_top{
+    display: flex;
+    padding: 20px;
+}
+.footer_top a{color: black; text-decoration-line: none;}
+
+#ft_mid{
+    display: flex; justify-content: space-between;  align-items:baseline;
+    margin-bottom: 10px;
+}
+
+#ft_mid h3{font-size: 14px; padding: 15px;}
+#ft_mid .call{font-size: 22px; font-weight: bold; padding: 22px;}
+#ft_mid p{font-size: 11px;}
+
+#ft_bot{
+    font-size: 11px;
+    display: flex; justify-content: space-between;
+    font-size: 12px;
+    color: #7A7A7A;
+}
+.ft_bot1{left: 0;
+width: 400px;}
+.ft_bot2_1{right: 0;
+    width: 600px;
+    display: flex; justify-content: right;
+}
+.kg{background-color: #7A7A7A;color: white;}
+.ft_bot2 a{text-decoration-line: none; color: white;background-color: black;}
+.ft_bot2{text-align: right;
+
+}
+
+/* popup */
+
+#popup{
+    position: fixed;
+    right: 0px;
+    top: 20%;   
+}
+#popup > li{
+    width: 50px; height: 60px;
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+#popup > li > img{height: 55px;}
+#popup > li > span{
+    position: absolute;
+    top: 5px; right: 50px;
+    font-size: 10px;
+    width: 70px; height: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+    display: none;
+}
+#popup >li:hover .popupSub{
+    display: block;
+}
+
