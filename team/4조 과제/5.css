@@ -4,7 +4,6 @@ a{color: #333333; text-decoration: none;}
 input{border: none;}
 select{border: none; width: 80px; height: 30px;}
 *:focus{outline: none;}
-body{text-align: center;}
 /* ========공통============ */
  
 
@@ -70,11 +69,20 @@ body{text-align: center;}
 
 /* 헤더 카테고리 메뉴 e */
 
+a{text-decoration: none; color: black;}/* a태그 기본값 */
+
+#wrap7{     /* 페이지 총 사이즈 */
+    width: 1280px;
+    margin: 0 auto;
+}
+
 
 
 
 
 /*게시판 타이틀*/
+#contentWrap{margin: 0 auto;}
+#wrapCC{margin: 0 auto; width: 1260px; display: flex; flex-wrap: wrap;}
 #contentA h1{
     font-size: 18px;
     color: #555555;
@@ -84,7 +92,7 @@ body{text-align: center;}
     
 }
 /*게시판 선택*/
-#contentB{width: 1260px; display: inline-block;}
+#contentB{width: 1260px; display: flex; justify-content: center;}
 #contentB > ul{    
     display: flex;
     justify-content: center;
@@ -96,7 +104,8 @@ body{text-align: center;}
     width: 150px;
     margin: 10px; 
     position: relative;
-    display: inline-block;
+    justify-content: center;
+    display: flex;
     cursor: pointer;
   
 }
@@ -126,7 +135,7 @@ body{text-align: center;}
 option{color: #555555;}
 
 /*게시판*/
-#content{display: inline-block;}
+#content{display: block;}
 tbody{text-align: center;}
 table{
     text-align: center; width: 1260px;
