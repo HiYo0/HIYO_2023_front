@@ -40,14 +40,14 @@ li{ list-style: none; } /*글머리 제거*/
 }
 .h_logo{display: block;
     margin: 0 auto;
-    width: 1100px;
+    width: 1260px;
     margin-bottom: 30px;
     margin-top: 60px;
 
 }
 /* 헤더 상단 e */
 /* 헤더 카테고리 메뉴 s */
-#h_menu{width: 1100px;
+#h_menu{width: 1260px;
     margin: 0 auto;
     margin-bottom: 50px;
     font-size: 12px;
@@ -312,12 +312,13 @@ li{ list-style: none; } /*글머리 제거*/
 }
 
 #footer .ftInner {
-    width: 1100px; margin: 0 auto;
+    width: 1260px; margin: 0 auto;
 }
 
 .footer_top{
     display: flex;
-    padding: 20px;
+    padding: 20px 0;
+    font-size: 12px;
 }
 .footer_top a{color: black; text-decoration-line: none;}
 
