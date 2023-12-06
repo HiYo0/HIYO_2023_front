@@ -1,0 +1,346 @@
+/* 헤더 상단 s */
+#header{padding: 30px;}
+#header_main{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.h_t_l{
+    width: 300px;
+    display: flex;
+    margin: 3px;
+    font-size: 12px;
+    align-items: center;
+}
+
+#header div a{
+    color: black;
+    text-decoration: none;
+}
+
+.h_t_r{
+    width: 300px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+.h_logo{display: block;
+    margin: 0 auto;
+    width: 1100px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+
+}
+/* 헤더 상단 e */
+/* 헤더 카테고리 메뉴 s */
+#h_menu{width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: 12px;
+}
+#h_menu >ul{display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#h_menu ul li:hover .subMenu{
+    display: block;
+    background-color: aliceblue;
+    
+}
+.subMenu{
+    display: none;
+    position: absolute;
+    top: 30px;  
+}
+#h_menu ul li .subMenu{
+    line-height: 160%;
+}
+
+/* 헤더 카테고리 메뉴 e */
+
+
+
+
+
+#wrap3{display: flex; justify-content: center;}
+
+#annaBasket{
+    font-size: 13px;
+    color:#666666;
+    margin: 0 auto;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+span{
+    font-weight: bold;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: inner-spin-button; 
+    opacity: 1;
+}
+#titlePage{
+    text-align: center;
+}
+#titlePage h1{
+    font-size: 18px;
+    padding-top:100px;
+    padding-bottom: 30px;
+    color: black;
+}
+#titlePage span{
+    color: #999999;
+    font-size: 12px;
+}
+.xBox ul{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #dadada;
+}
+.xBox ul li{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #dadada;
+    border-bottom: none;
+}
+
+#dadada{
+    background-color: #f5f5f5;
+    border:none
+}
+#dadada a{
+    color: #999999;
+}
+.xBox ul li a{
+    margin-top: 13px;
+}
+#dlfqkstkdvna{
+    border-bottom: 1px solid #dadada;
+    padding: 20px 10px 10px 10px;
+}
+.firstBox{
+    border-bottom: 1px solid #dadada;
+    padding: 10px 0px;
+    display: inline-block;
+    width: 1260px;
+    justify-content: space-between;
+}
+.Ejfdjwu1{
+    display: inline;
+    margin-right: 52px;
+}
+.Ejfdjwu{
+    display: inline;
+    padding-right: 247px;
+    margin-left: -25px;
+}
+/*이미지 크기*/
+tbody td >#wkdqkrnslImg{
+    width: 80px;
+}
+#bBox{
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 0 20px 0;
+}
+#bBox div ul{
+    display: flex;
+}
+#bBox div ul li{
+    cursor: pointer ;
+    padding: 0 1px;
+}
+#tnfid{
+    width: 10px;
+}
+#mBoxBetween{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #dadada;
+    background-color: #FBFAFA;
+}
+
+.firstBox1{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.firstBox1 #firstBoxcheckbox{
+    margin: 34px 10px 12px 0px;
+}
+.firstBox1 td > img{
+    margin: 10px 10px 10px -6px;
+}
+.firstBox1 > #firstBox1Button{
+    margin: 10px 10px 10px -5px;
+}
+.firstBox1 > #firstBox1Button >img{
+    margin: 10px 10px 10px 0px;
+}
+#firstBox1Button > a >span{
+    font-weight: bold;
+}
+.firstBox1 #tnfid input{
+    width: 44px;
+    margin: 28px 10px 10px -69px;
+}
+#firstBox11{
+    margin: 45px 75px 10px 242px;
+}
+#tnfid > img{
+    margin: -5px 10px 10px -70px;
+}
+#firstBox1-{
+    margin: 45px 47px 10px 0px;
+}
+.firstBox1 #tButton{
+    position: absolute;
+    left: 1150px;
+    margin-top: 20px;
+}
+.firstBox1 #tButton input{
+    width: 100px;
+    border: 1px solid #dadada;
+    cursor: pointer;
+}
+#rlqhsqothd{
+    margin: 45px 24px 10px -2px;
+}
+#whrjs{
+    padding: 45px 0px 10px 0px;
+}
+#dlaksclfcjsdnjs{
+    margin: 45px 122px 10px 10px;
+}
+.rjawjdtor{
+    background-color: #434a54;
+    color: white;
+}
+#mBoxBetween > li >span{
+    font-size: 20px;
+    color: black;
+}
+#amountBox1 tr{
+    width: 1260px;
+    height: 60px;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+#amountBox2 tr{
+    width: 1260px;
+    height: 82px;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+#amountBox11{
+    margin: 20px 0 0 150px;
+}
+#amountBox12{
+    margin: 20px 150px 0 0;
+}
+#amountBox13{
+    margin: 20px 400px 0 0;
+}
+#amountBox14{
+    margin: 31px 0 0 150px;
+    font-size: 20px;
+    color: black;
+}
+#amountBox15{
+    margin: 31px 150px 0 0;
+    font-size: 20px;
+    color: black;
+}
+#amountBox16{
+    margin: 31px 400px 0 0;
+    font-size: 20px;
+    color: black;
+}
+#rlarjsdn{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+#gkswltjd a{
+    display: flex;
+    justify-content: flex-end;
+}
+#gkswltjd img{
+    margin-top: -44px;
+}
+#naverBox{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+#naverButton{
+    width: 214px;
+    height: 83px;
+    border-top: 2px solid black;
+}
+#naverLink{
+    padding: 11px 0 0 86px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dadada;
+}
+#naverLink > img{
+    margin: 0px 10px 10px -87px;
+}
+
+
+/* footer st */
+#footer{background-color: white;  margin: 0 auto;
+    border-top: 1px solid gray;
+}
+
+#footer .ftInner {
+    width: 1100px; margin: 0 auto;
+}
+
+.footer_top{
+    display: flex;
+    padding: 20px;
+}
+.footer_top a{color: black; text-decoration-line: none;}
+
+#ft_mid{
+    display: flex; justify-content: space-between;  align-items:baseline;
+    margin-bottom: 10px;
+}
+
+#ft_mid h3{font-size: 14px; padding: 15px;}
+#ft_mid .call{font-size: 22px; font-weight: bold; padding: 22px;}
+#ft_mid p{font-size: 11px;}
+
+#ft_bot{
+    font-size: 11px;
+    display: flex; justify-content: space-between;
+    font-size: 12px;
+    color: #7A7A7A;
+}
+.ft_bot1{left: 0;
+width: 400px;}
+.ft_bot2_1{right: 0;
+    width: 600px;
+    display: flex; justify-content: right;
+}
+.kg{background-color: #7A7A7A;color: white;}
+.ft_bot2 a{text-decoration-line: none; color: white;background-color: black;}
+.ft_bot2{text-align: right;
+
+}
