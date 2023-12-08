@@ -35,7 +35,7 @@ CSS : 캐스케이딩(상속-부/자) 스타일 시트 ( Cascading Style sheets 
 
 3. CSS 속성 종류
     1. background-color : 색상                  : 배경색 
-    2. background-image : url("이미지경로")     : 배경이미지
+       background-image : url("이미지경로")      : 배경이미지
         - background-repeat :                   : 여백이 있을경우 배경 반복 여부
             repeat[기본값] , no-repeat
         -background-position :                  : 배경이미지 위치 
@@ -73,7 +73,6 @@ CSS : 캐스케이딩(상속-부/자) 스타일 시트 ( Cascading Style sheets 
     1. border                   : 테두리 : 두께 선종류 색상
         border-top , border-right ,  border-bottom , border-left
         *선종류 : solid , dotted , double , dashed
-        border-radius           : 둥글게
     2. padding                  : 안쪽여백 
         padding-top , padding-right , padding-bottom , padding-left
     3. margin                   : 바깥여백 
