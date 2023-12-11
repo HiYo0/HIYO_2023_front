@@ -1,0 +1,5 @@
+body{width: 1280px; display: flex; flex-wrap: wrap; margin: 0 auto;}
+
+#wrep{width: 1280px; display: flex; flex-wrap: wrap;}
+fieldset{width: 350px; margin: 0px 20px;}
+
