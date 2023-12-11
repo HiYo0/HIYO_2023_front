@@ -127,19 +127,20 @@ function 문제7함수(){
     let No2 = "";
     let No3 = "";
 
-    if(value1>value2 && value1>value3){No1=value1;}
-    else if(value2>value3){No1=value2;}
-    else(No1=value3);/* 가장큰 수 = NO1 */
+    if( value1 > value2 && value1 > value3 ){ No1=value1; }
+    else if( value2>value3 ){ No1=value2; }
+    else( No1=value3 );/* 가장큰 수 = NO1 */
 
-    if(value1<value2 && value1<value3){No3=value1;}
-    else if(value2<value3){No3=value2;}
-    else(No3=value3);/* 가장작은 수 = NO1 */
+    if( value1 < value2 && value1 < value3 ){ No3=value1; }
+    else if( value2 < value3 ){ No3=value2; }
+    else( No3=value3 );/* 가장작은 수 = NO3 */
 
-    if(value1!=No1 && value1!=No3){No2=value1}
-    if(value2!=No1 && value2!=No3){No2=value2}
-    if(value3!=No1 && value3!=No3){No2=value3}
+    if( value1!=No1 && value1!=No3 ){ No2=value1 }
+    if( value2!=No1 && value2!=No3 ){ No2=value2 }
+    if( value3!=No1 && value3!=No3 ){ No2=value3 }
 
-    UP=[No3,No2,No1]
+    UP=[ No3,No2,No1 ]
+    DOWN=[ No1,No2,No3 ]
     
     document.querySelector("#result").innerHTML = `${UP}`
 }
@@ -161,13 +162,14 @@ function 문제7함수Ver2(){
 
     if(value1<value2 && value1<value3){No3=value1;}
     else if(value2<value3){No3=value2;}
-    else(No3=value3);/* 가장작은 수 = NO1 */
+    else(No3=value3);/* 가장작은 수 = NO3 */
 
     if(value1!=No1 && value1!=No3){No2=value1}
     if(value2!=No1 && value2!=No3){No2=value2}
     if(value3!=No1 && value3!=No3){No2=value3}/* 중간 수 No2로 지정하기 */
 
-    DOWN=[No1,No2,No3]
+    UP=[ No3,No2,No1 ]
+    DOWN=[ No1,No2,No3 ]
     
     document.querySelector("#result").innerHTML = `${DOWN}`
     
