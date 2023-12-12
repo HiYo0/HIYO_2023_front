@@ -32,6 +32,7 @@
 
 const 차량번호 = [];
 const 입차시간 = [];
+const 나간차량 = [];
 // =========================================================
 function 입차기록(){
     console.log("입차기록 실행");/* 테스트 */
@@ -77,7 +78,8 @@ function 출차기록(){
     if((Number(출차분 - 입차분)<=30)){alert("무료출차");return}
     else{
         console.log(`${parseInt((계산-30)/10*1000)}`);
-        document.querySelector(`#carNumber`).innerHTML = `<br/>${차량번호입력값}`;
+        나간차량.push(차량번호입력값)
+        document.querySelector(`#carNumber`).innerHTML = `${나간차량}`;
     };
     
     // const 츨차분 = (차량번호Intime.split(":")[0]*60)/* 시 */ + Number(차량번호Intime.split(":")[1] );/* 분 */
