@@ -192,87 +192,46 @@ function 문제9(){
     
     const line9 =Number(document.querySelector("#line9").value);
     let output = ``;
-    for(let 행 =1; 행<=line9; 행++){
-        output += `<tr>`
-        
-        for(let 열 =1; 열<=line9; 열++){
-            if(열==parseInt(line9/2+1)){ output +=`<td>★</td>`;}
-            else if(행==parseInt(line9/2+1)){ output +=`<td>★</td>`;}
-            else if(열+행==parseInt(line9/2)+2){ output +=`<td>★</td>`;}
-            else if(열>=parseInt(line9/2+1) && 행<=parseInt(line9/2+1)){ output +=`<td>★</td>`;}
-            else{ output +=`<td>☆</td>`;}
+    if (parseInt(line9)%2==0){
+        /* 짝수버전 */
+        for(let i = 1; i<=(line9/2); i++){
+            output += `<tr>`
+            for(let a = 1; a<=(line9/2)-i; a++ ){ output += `<td>☆</td>` ;}
+            for(let b = 1; b<=i*2-1; b++ ){ output += `<td>★</td>` ;}
+            output += `</tr>`;
+        }
+        for(let i = 1; i<=(line9/2); i++){
+            output += `<tr>`
+            for(let s= 1; s<=i-1; s++){output += `<td>☆</td>`;}
+            for(let p = 1; p<=((line9/2)-i+1)*2-1; p++){output += `<td>★</td>`;}
+            output += `</tr>`;
+        }
+        const tableObj = document.querySelector('#table9');
+        tableObj.innerHTML = output;
+        document.querySelector('#line9').value = ``
+
+    }else{
+        /* 홀수버전 */
+        for(let i =1; i<=parseInt(line9/2)+1; i++){
+            output += `<tr>`
+            /* 위 삼각형 */
+            for(let a=1; a<=parseInt(line9/2)-i+1; a++){output += `<td>☆</td>`}
+                                /* 절반값 */
+            for(let b=1; b<=i*2-1; b++){output += `<td>★</td>`}
+            
+            output += `</tr>`;
+        }
+        for(let i =1; i<=parseInt(line9/2); i++){
+            output += `<tr>`
+            /* 아래 삼각형 */
+            for(let a=1; a<=i; a++){output += `<td>☆</td>`}
+            for(let b=1; b<=((line9/2)-i)*2; b++){output += `<td>★</td>`}
+            
+            output += `</tr>`;
         }
         
-        output += `</tr>`
+        const tableObj = document.querySelector('#table9');
+        tableObj.innerHTML = output;
+        document.querySelector('#line9').value = ``
     }
-    
-    const tableObj = document.querySelector('#table9');
-    tableObj.innerHTML = output;
-    document.querySelector('#line9').value = ``
 }
-
-
-// function 문제9(){
-
-//     const q7 = Number(document.querySelector(`#line9`).value)/2
-
-//     let html = ``;
-
-//     if((2*q7)%2==0){
-
-//         for(let i=1 ; i<=q7 ; i++ ){
-
-//             html += `<tr>`
-
-//             for(let b=1; b<=q7-i; b++){ html += `<td>☆</td>`;
-//             }
-//             for(let s=1; s<=2*i-1; s++){ html += `<td>★</td>`
-//             }
-            
-//             html += `</tr>`;
-//         }
-
-
-//         for(let i=1; i<=q7; i++){
-//             html += `<tr>`
-//             for(let b=1; b<=i-1; b++){ html += `<td>☆</td>`;
-//             }
-//             for(let s=1; s<=2*q7-2*i+1; s++){html += `<td>★</td>`;
-//             }
-            
-
-//             html += `</tr>`;
-//         }   
-//     }
-
-//     else{
-//         for(let i=1 ; i<=q7+0.5 ; i++ ){
-//             html += `<tr>`
-//             for(let b=1; b<=(q7+0.5)-i; b++){ html += `<td>☆</td>`; }
-//             for(let s=1; s<=2*i-1; s++){ html += `<td>★</td>`
-//             }
-            
-//             html += `</tr>`;
-//         }
-
-
-        
-//         for(let i=1; i<=q7-0.5; i++){
-
-//             html += `<tr>`
-            
-//             for(let b=1; b<=i; b++){ html += `<td>☆</td>`;
-//             }
-//             for(let s=1; s<=2*(q7-0.5)-2*i+1 ; s++){html += `<td>★</td>`;
-//             }
-           
-
-
-//             html += `</tr>`;
-//         }
-//     }
-
-//     const tableObj = document.querySelector('table');
-//     console.log(tableObj);
-//     tableObj.innerHTML = html;
-// }
