@@ -1,5 +1,8 @@
+
+// 문제1) 입력받은 수 만큼 * 출력
+
+// for(let A=1; A<5; A++){console.log(``)}
 /* 
-// 문제1) 입력받은 수 만큼 * 출력 
 // 문제2) 입력받은 수 만큼 * 출력 [  - 3줄(3배수)마다 줄바꿈 ]
 // 문제3) 입력받은 줄 수 만큼 * 출력  [ ex) 5 ]
 *
@@ -57,3 +60,29 @@
  *   *
 *     *
  */
+/* 
+    p.17
+        [ 배열 , 객체 , 자료 ]
+        1.
+            for ( let i = 0 ; i<배열명.length ; i++ ){  }
+            for ( let i = 0 ; i<10 ; i++ ){  }
+
+        2. for ( let i in 배열명 ){  }
+
+        3. for ( let i of 배열명 ){  }
+
+        4. while( 조건문 ){ 실행문; }
+
+*/
+const todos = ['우유구매' , '업무 메일 확인하기' , '필라테스 수업' ]
+// 1. - i는 0부터 마지막인덱스까지 1씩증가 하면서 consol.log 반복 실행
+for( let i = 0; i<todos.length; i++ ){ console.log(`${i}번째 할 일 : ${todos[i]}`); }
+// 2. - i는 todos배열내 요소 *인덱스를 하나씩 대입 받으면서 consol.log 반복 실핼
+for( let i in todos ){ console.log(todos[i]); }
+// 3. - i는 todos배열내 요소 *값을 하나씩 대입 받으면서 console.log 반복 실행
+for ( let i of todos ){ console.log(i); }
+// 4. 
+let i = 0;
+while( i <todos.length ){ console.log( todos[i]); i++; }
+
+    
