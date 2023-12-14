@@ -61,22 +61,7 @@ function 출력함수(){
     totalInputA.innerHTML = pageTotal
         
         
-}/* <div>
-                        <h3>항목</h3>
-                        <table id="textInput"> ${항목[i]} </table>
-                    </div>
-                    <div>
-                        <h3>금액</h3>
-                        <table class="moneyInput"> ${금액[i]}원 </table>
-                    </div>
-                    <div>
-                        <h3>비고</h3>
-                        <table> <input onclick="삭제함수(${i})" type="button"value="삭제"/> </table> */
-
-                       /*  `</div>
-                        <div id="form3">
-                            <p>2000원</p>
-                        </div>` */
+}
 /* 
 주제 : 가계부
 [요구사항]
