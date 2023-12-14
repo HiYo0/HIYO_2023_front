@@ -15,14 +15,68 @@ function 등록함수(){
     console.log(날짜);
     console.log(항목);
     console.log(금액);
+    
+    출력함수();
 }
 function 삭제함수(삭제순서){
     날짜.splice(삭제순서,1);
     항목.splice(삭제순서,1);
     금액.splice(삭제순서,1);
+    
+    출력함수();
 }
+function 출력함수(){
+    const dateInputA = document.querySelector('#dateInput');
+    const textInputA = document.querySelector('#textInput');
+    const moneyInputA = document.querySelector('#moneyInput');
+    const delitInputA = document.querySelector('#delitInput');
+    
+    const totalInputA = document.querySelector('#form3');
+    let pageDate =``;
+    let pageText =``;
+    let pageMoney =``;
+    let pageDelit =``;
+    let pageTotal =``;
+
+    for(i=0; i<날짜.length; i++){
+        pageDate += `<table id="dateInput"> ${날짜[i]} </table><br/>`;
+        pageText += `<table id="textInput"> ${항목[i]} </table><br/>`
+        pageMoney += `<table id="moneyInput"> ${금액[i]}원 </table><br/>`
+        pageDelit += `<table id="delitInput"> <input onclick="삭제함수(${i})" type="button"value="삭제"/> </table><br/>`
+    }
+    dateInputA.innerHTML = pageDate
+    textInputA.innerHTML = pageText
+    moneyInputA.innerHTML = pageMoney
+    delitInputA.innerHTML = pageDelit
+
+    let totalMoney = 0;
+    /* 총합구하기 */
+    for(a=0; a<금액.length; a++){
+        totalMoney += Number(금액[a]);}
+    console.log(totalMoney)
 
 
+
+    pageTotal = `<p id="totalInput">${totalMoney}원</p>`
+    totalInputA.innerHTML = pageTotal
+        
+        
+}/* <div>
+                        <h3>항목</h3>
+                        <table id="textInput"> ${항목[i]} </table>
+                    </div>
+                    <div>
+                        <h3>금액</h3>
+                        <table class="moneyInput"> ${금액[i]}원 </table>
+                    </div>
+                    <div>
+                        <h3>비고</h3>
+                        <table> <input onclick="삭제함수(${i})" type="button"value="삭제"/> </table> */
+
+                       /*  `</div>
+                        <div id="form3">
+                            <p>2000원</p>
+                        </div>` */
 /* 
 주제 : 가계부
 [요구사항]
