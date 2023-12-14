@@ -1,0 +1,61 @@
+bady{width: 600px;}
+#wrap{
+    border: 1px solid #000000;
+    width: 500px;
+    margin: auto;
+}
+    #wrap>div>h1{
+        text-align: center;
+    }
+    #wrap>div>h1:after{
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 50px;
+        border-bottom: 1px solid rgba(22, 182, 1, 0.705);
+        
+        
+        
+    }
+#form1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+    #form1 input{
+        width: 150px;
+        border: none; border-bottom: 1px solid #8d8d8d
+        ;
+    }
+    #form1 input[type="button"]{
+        height: 100px;
+        border: none; background-color: aquamarine;
+        border-radius: 20px;
+        font-size: 20px;font-weight: bold;
+        cursor: pointer;
+    }
+
+#form2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 40px;
+    text-align: center;
+}
+#form3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+    #form3>p{
+        width: 400px;
+        height: 50px;
+        background-color: aquamarine;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+
+/* 꾸미기 끝==================== */
