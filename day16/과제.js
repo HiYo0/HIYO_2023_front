@@ -16,8 +16,8 @@ function 좌석출력(){
 
     for(let i = 1; i<=6; i++){
         
-        if( 번호.indexOf(i+"") >= 0 && 시간e[번호.indexOf(i+"")] ==''  ){
-
+        if( 번호.indexOf(i+"") >= 0 && 시간e[번호.indexOf(i+"")] =='' ){
+        /* 번호의 값이 0보다 크면 있는거 *///끝나는 시간이 없으면 공백처리
             html +=`<div class="classBox"> ${ 사용자[번호.indexOf(i+"")] } </div>`
         } else{
             html +=`<div class="classBox classBox1"> 빈자리 </div>`
@@ -121,8 +121,11 @@ function 출력함수(){
         console.log(시간s분)/* 테스트 */
         const 시간e분 = Number(시간e[i].split(":")[0]*60)+Number(시간e[i].split(":")[1]);
                 // console.log(시간e분)/* 테스트 */
-        const 계산 = parseInt(시간e분-시간s분);     console.log( 계산 )
-
+        let 계산 = parseInt(시간e분-시간s분);
+        console.log( 계산 );
+        console.log(typeof(계산));     
+           if(계산<=0){계산.push(`0`)}
+           else{계산}
         출력함수 +=`
         <div id="tablerow">
         <div class="content1">
@@ -159,7 +162,7 @@ function 출력함수(){
     
     
 }
-function 삭제함수(삭제할인덱스){         // f s
+function 삭제함수(삭제할인덱스){    // f s
     
 번호.splice(삭제할인덱스,1);
 시간s.splice(삭제할인덱스,1);
