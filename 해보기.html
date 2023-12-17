@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>개인학습</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='해보기.css'>
+    
+</head>
+<body>
+    <div id="wrap">
+        <div id="titleForm"><!-- 1줄 -->
+            <h1>PC사용현황</h1>
+        </div>
+        <!-- 2줄 -->
+        <div style="display: flex; justify-content: space-around;">
+        <div id="boxArea"><!-- 좌석영역 상태출력 --></div>
+        </div>
+
+        <div id="form1"><!-- 3줄 Input 라인 -->
+            <div><!-- 시작등록라인 -->
+                
+                <h3>번호 : 
+                    <select id="번호선택1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </h3>
+        
+                <h3>시작시간 : 
+                    <input id="startTime" type="time"/>
+                </h3>
+
+                <h3>사용자명 : 
+                    <input id="userName" type="text"/>
+                </h3>    
+            </div><!-- 시작등록라인 ENd -->
+            <input class="btnForm" onclick="시작등록()" type="button" value="시작등록"/>
+            
+            <div><!-- 종료등록라인 -->
+                <h3>번호 : 
+                    <select id="번호선택2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </h3>
+                <h3>종료시간
+                    <input id="finishTime" type="time"/>
+                </h3>
+            </div>
+            <input class="btnForm" onclick="/* 종료등록함수지정 */" type="button" value="종료등록"/>
+        </div><!-- 3줄 End -->
+
+        <div id="form2"><!-- 4줄 출력 라인-->
+            <div class="titleForm">
+                <h3>번호</h3><!-- 제목 -->
+                <table id="titleName"> </table>
+            </div>
+            <div>
+                <h3>시작시간</h3>
+                <table id="startInput"> </table>
+            </div>
+            <div>
+                <h3>사용자명</h3>
+                <table id="userInput"> </table>
+            </div>
+            <div>
+                <h3>종료시간</h3>
+                <table id="endInput"> </table>
+            </div>
+            <div>
+                <h3>사용시간</h3>
+                <table id="useInput"> </table>
+            </div>
+            <div>
+                <h3>비고</h3>
+                <div id="delit"></div>
+            </div>    
+        </div><!-- 4줄 출력라인 END -->
+        
+
+        <div><!-- 5줄 출력라인 -->
+
+        </div><!-- 5줄 출력라인 END -->
+        
+
+    </div><!-- 전체영역끝 -->
+    <script src='해보기.js'></script>
+</body>
+</html>

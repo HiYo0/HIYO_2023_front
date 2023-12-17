@@ -29,7 +29,6 @@ function 좌석출력(){
 }
 
 
-
 // 시간s = [01:00 , 02:00 , 03:00];
 
 function 종료시간등록(){
@@ -123,7 +122,7 @@ function 출력함수(){
                 // console.log(시간e분)/* 테스트 */
         let 계산 = parseInt(시간e분-시간s분);
         console.log( 계산 );
-        console.log(typeof(계산));     
+        console.log(typeof(계산));
            if(계산<=0){계산.push(`0`)}
            else{계산}
         출력함수 +=`

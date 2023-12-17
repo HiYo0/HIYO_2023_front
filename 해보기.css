@@ -1,0 +1,20 @@
+h1{font-size: 40px; font-weight: bold;}
+h3{font-size: 23px; font-weight: bold;}
+select{width: 60px;height: 40px;font-size: 20px; font-weight: bold; text-align: center;}
+input{width: 200px;height: 40px;font-size: 20px; font-weight: bold; text-align: center;}
+
+#warp{width: 1280px;}
+#titleForm{display: flex; justify-content: center; align-items: center;}
+#boxArea{display: flex; justify-content: space-around; align-items: center; width: 1280px; height: 200px;}
+    /* 좌석 상태이벤트 */
+    .boxcolorTrue{width: 15%; height: 80%; background-color: aqua;}/* 있을때 */
+    .boxcolorFalse{background-color: gray; font-weight: bold;}/* 없을때 */
+#form1{display: flex; justify-content: space-around;}
+
+    .btnForm{width: 300px; height: 250px; margin: auto 10px;}
+
+#form2{display: flex; justify-content: space-around; text-align: center;}
+
+    #delitForm{width: 50px;}
+
+
