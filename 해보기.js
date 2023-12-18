@@ -14,8 +14,9 @@ function 영역출력(){
 
     /* 6개 칸 만들기 */
     for(let i=1; i<=6; i++){
-        console.log(번호)
-        if(번호.indexOf(i+"") >= 0 && 시간e[번호.indexOf(i)] == '' ){
+        // console.log(번호);
+        console.log(시간e);
+        if(번호.indexOf(i+"") >= 0 && 시간e[번호.indexOf(i+"")] == "" ){
             영역 += `<div class="boxcolorTrue"> ${사용자[번호.indexOf(i+"")] } </div>`}
         else{
             영역 +=`<div class="boxcolorTrue boxcolorFalse"> 빈자리 </div>`
@@ -38,6 +39,23 @@ function 시작등록(){
     document.querySelector('#userName').value='';
     출력함수()
 }
+function 종료등록(){
+    const 선택번호2 = document.querySelector('#번호선택2').value;
+    const 종료시간 = document.querySelector("#finishTime").value;
+
+    let 종료시간용 = ``
+    시간e.push(종료시간);
+    for(let b=0; b<번호.length; b++){
+        종료시간용 += `<table id="endInput">${시간e[b]} </table><br/>`
+    }
+    document.querySelector("#endInput").innerHTML = 종료시간용
+    
+    document.querySelector('#번호선택2').value='';
+    document.querySelector("#endInput").value = '';
+    
+    출력함수()
+}
+
 
 
 function 출력함수(){
