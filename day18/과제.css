@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'EASTARJET-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/EASTARJET-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+*{
+    font-family: 'EASTARJET-Medium' ;
+}
+
+
+
+#wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+    font-size: 100px;
+}
+.classBox{
+    border:  solid 3px black;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(128, 255, 158);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px; font-weight: bold;
+}
+.classBox1{
+    background-color: rgb(226, 115, 115);
+}
+#boxTop ,#boxBot{
+    display: flex;
+    justify-content: center;
+
+}
+#content{
+    display: flex; 
+    justify-content: space-around;
+    border-bottom: 3px solid black;
+}
+#textArea{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#registrationMom{
+    padding-bottom: 30px;
+}
+.registration{
+    width: 100%;
+    height: 70px;
+}
+#registration1{
+    border:  solid 3px gray;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    
+    
+}
+#registration2{
+    border:  solid 3px gray;
+    background-color: gray;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+#pcNum{
+    width:50px;
+}
+#richperson{
+    background-color: rgb(161, 223, 67);
+    padding: 20px 0;
+    font-size: 40px;
+    text-align: center;
+}
+#삭제함수버튼{
+    border: none;
+    font-size: 30px;
+    background-color: white;
+    cursor: pointer;
+}
+#tablerow{
+    display: flex;
+    justify-content: space-around;
+}
+#table{
+    padding: 20px 0;
+}
