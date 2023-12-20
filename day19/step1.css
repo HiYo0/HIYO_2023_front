@@ -1,0 +1,96 @@
+
+*{margin: 0px; padding: 0px;}
+li{list-style: none;/* 글머리 제거 */}
+
+/* 전체구역 */
+#wrap{width: 700px; margin: 0 auto;}
+
+/* 헤더 이미지 */
+#header > img{width: 100%;}
+
+/* 헤더 카테고리 */
+#header > ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+    
+    /* 선택된 카테고리 */
+    #header>ul>.selectMenu{
+        border-bottom: 2px solid red;
+        padding-bottom: 5px;
+        color: red; font-weight: bold;
+    }
+
+/* 제품목록 구역 */
+#productBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 500px;  
+
+    /* 자식요소들이 고정 사이즈의 부모요소보다 커졌을때. */
+    overflow-y: scroll; /* 세로 스크롤 생성 */
+}
+    #productBox > .product{
+        width: 200px;
+        margin: 10px 10px ;
+    }
+    /* 제품 이미지 */
+    #productBox >.product> img{width: 100%;}
+    /* 제품 이름/가격 */
+    #productBox >.product> .pInfo{text-align: left;}
+    #productBox >.product .pName{font-weight: bold; font-size: 20px;}
+    #productBox >.product .pPrice{color: red;}
+
+
+/* 카트 버튼들 */
+#cartBtns{display: flex;}
+    #cartBtns > input{
+        width: 100%; height: 50px;
+        font-size: 20px;border: none;
+        color: white; font-weight: bold;
+    }
+/* 자식요소가 여러개일때[혛제가 여러개일때] 자식의 순번으로 */
+/* 자식요소선택자:nth-child( 인덱스 ) */
+#cartBtns > input:nth-child(1){background-color: black;}
+#cartBtns > input:nth-child(2){background-color: red;}
+
+/* 카트 정보의 상단부분 */
+#cartContent{background-color: #e8e8e8;}
+    #cartTop{
+        display: flex; justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 10px 50px;
+    }
+        #cartTop div:nth-child(1) span{
+            background-color: red;
+            border-radius: 30px;
+            display: inline-block;
+            padding: 3px;width: 30px;
+            text-align: center;color: white;}
+
+        #cartTop div:nth-child(2) span{color: red; font-weight: bold;}
+
+    #cartBottom{
+        display: flex;
+        overflow-x: scroll;
+        height: 150px;
+    }
+
+    #cartBottom > .cItem{
+        min-width: 150px;   /* 고정 최소 사이즈 */
+        margin: 10px; padding: 10px;
+        background-color: white;
+        position: relative;
+    }
+    #cartBottom > .cItem>div:nth-child(1){width: 130px; height: 50px;}
+    #cartBottom > .cItem>div:nth-child(2){color: red;}
+    #cartBottom > .cItem>span{
+        position: absolute;
+        top: 0px; right: 10px;
+        font-size: 25px;
+    }
+
+#numberInput{width: 40px;height: 40px;}
+#productnameInput{width: 200px;height: 40px;}

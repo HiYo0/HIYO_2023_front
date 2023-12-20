@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>day19 step1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='step1.css'>
+    
+</head>
+<body>
+
+    <div id="wrap"><!-- 전체시작 -->
+        <div id="header">
+            <img src="step1Img/mainImg.png"/>
+            <ul>
+               <!--  <li>신제품(NEW)</li>
+                <li class="selectMenu">프리미엄</li>
+                <li>와퍼&주니어</li>
+                <li>치킨&슈림프버거</li>
+                <li>올데이킹&킹모닝</li> -->
+            </ul>
+        </div>
+        <div id="main">
+            <div id="productBox">
+                <!-- 여기에 JS가 들어 갈예정 -->
+                <!-- 
+                
+                <div class="product">
+                    <img src="step1Img/큐브스테이크와퍼.png" />
+                    <div class="pInfo">
+                        <div class="pName"> 큐브스테이크와퍼 </div>
+                        <div class="pPrice"> 4,700원 </div>
+                    </div>
+                </div>
+                -->
+                
+            </div>
+            <div id="cartBox">
+                <div id="cartContent"><!-- 1번쨰 줄 -->
+                    <div id="cartTop">
+                        <div> 카트 <span id="count">0</span></div>
+                        <div> 총주문금액 <span id="total">0원</span></div>
+                    </div>
+                
+
+                    <div id="cartBottom"><!-- 2번쨰줄  -->
+                        <!-- 장바구니의 제품들이 출력되는구역 -->
+                        
+                    </div>
+                </div>
+                <div id="cartBtns"><!-- 3번째 줄 -->
+                    <input onclick="cartCencle()" type="button" value="취소하기">
+                    <input type="button" value="주문하기">
+                </div>
+            </div>
+        </div>
+            
+        
+    </div><!-- 전체끝 -->
+    <!-- 
+        개인과제 step1 하단
+        [관리자 입장]
+        1. 카테고리 등록
+        2. 제품등록
+        ==============================================================
+        3. 결제 구현
+                1. 결제 버튼 클릭하면 장바구니 제품을 결제내역 으로 이동.
+                    +[ 주문번호 , 주문날짜, 주문상태 ]
+
+                2. 관리자 내역 table에 주문현황/결제내역 을 출력
+     -->
+    <div id="shiftForm">
+        <h3> 관리자 메뉴 </h3>
+        <div style="font-size: 30px;">
+            <h3>카테고리 등록</h3>
+            <div style="display: flex;">
+                <div>카테고리 번호를 지정해주세요 <input id="numberInput"  type="number"/></div>
+                <div>카테고리 품묵명을 작성해주세요<input id="productnameInput" type="text"/></div>
+                <input onclick="categoryPlus()" type="button" value="등록" style="width: 100px; font-size: 30px;"/>
+                <input onclick="categoryDelete()" type="button" value="삭제" style="width: 100px; font-size: 30px;"/>
+            </div>
+        </div>
+        <div>
+            <h3>제품 등록</h3>
+            <div>
+                <input id="test용" type="file"/>
+                
+            </div>
+            <input onclick="테스트용함수()" type="button" value="테스트용함수">
+        </div>
+        <div>
+            <h3>결제 내역</h3>
+        </div>
+    </div>
+    
+
+    <script src='step1.js'></script>
+</body>
+</html>
