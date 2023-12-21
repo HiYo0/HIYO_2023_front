@@ -158,7 +158,7 @@ function categoryPlus(){
     // 입력
     
     const numberInput = Number(document.querySelector('#numberInput').value);
-    const productnameInput = document.querySelector('#productnameInput').value;
+    const productnameInput = document.querySelector('#categorynameInput').value;
     
     let 임시 = {};
 
@@ -175,7 +175,7 @@ function categoryPlus(){
     console.log(categoryArray)
     printCategory(1);
 
-    document.querySelector('#productnameInput').value=''
+    document.querySelector('#categorynameInput').value=''
 }
 
 function categoryDelete(){
@@ -189,4 +189,8 @@ function categoryDelete(){
 function 테스트용함수(){
     const test용 = document.querySelector('#test용').value;
     console.log(test용);
+}
+
+function 관리자출력함수(){
+    
 }

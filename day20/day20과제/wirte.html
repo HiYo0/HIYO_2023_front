@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>day20 step5</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='wirte.js'></script>
+</head>
+<body style="width: 600px; margin: 0 auto;">
+    <h3> wirte.html 글쓰기 페이지</h3>
+    <a href="wirte.html">글쓰기</a><a href="list.html">글목록</a>
+    <div>
+        <h3> 글쓰기 </h3>
+        <form style="border: 1px solid aqua;width: 400px;">
+            작성자 : <input id="writer" type="text" />      <br/>
+            비밀번호 : <input id="passowrd" type="password" /><br/>
+            제목 : <input id="title" type="text" />        <br/>
+            내용 : <textarea id="content"></textarea>        <br/>   
+            <input onclick="글쓰기등록()" type="button" value="등록" />
+        </form>
+    </div>
+</body>
+</html>

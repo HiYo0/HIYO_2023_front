@@ -62,7 +62,8 @@
             function 개별글출력( index ){
 
                 // *조회수 증가.
-                boardArray[index].조회수 += 1;모든글출력()
+                boardArray[index].조회수 += 1;
+                모든글출력()
                 const boardBox = document.querySelector('#boardBox');
                 
                 let html = `<div> 작성자 : ${boardArray[index].작성자} 조회수 : ${boardArray[index].조회수}</div>

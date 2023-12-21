@@ -76,7 +76,7 @@
             <h3>카테고리 등록</h3>
             <div style="display: flex;">
                 <div>카테고리 번호를 지정해주세요 <input id="numberInput"  type="number"/></div>
-                <div>카테고리 품묵명을 작성해주세요<input id="productnameInput" type="text"/></div>
+                <div>카테고리 이름을 작성해주세요<input id="categorynameInput" type="text"/></div>
                 <input onclick="categoryPlus()" type="button" value="등록" style="width: 100px; font-size: 30px;"/>
                 <input onclick="categoryDelete()" type="button" value="삭제" style="width: 100px; font-size: 30px;"/>
             </div>
@@ -85,9 +85,21 @@
             <h3>제품 등록</h3>
             <div>
                 <input id="test용" type="file"/>
-                
+                <input onclick="테스트용함수()" type="button" value="테스트용함수">
             </div>
-            <input onclick="테스트용함수()" type="button" value="테스트용함수">
+            <div>제품 번호를 지정해주세요 <input id="numberInput2"  type="number"/></div>
+            <div>제품 이름을 작성해주세요<input id="productnameInput" type="text"/></div>
+            <div>제품 가격을 작성해주세요<input id="productpriceInput" type="number"/></div>
+            <div>카테고리분류를 지정해주세요
+                <select name="카테고리분류" id="">
+                    <option value="cno">카테고리명</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+            </div>
+
         </div>
         <div>
             <h3>결제 내역</h3>
