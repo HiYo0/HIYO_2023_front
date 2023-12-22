@@ -69,7 +69,7 @@
                 let html = `<div> 작성자 : ${boardArray[index].작성자} 조회수 : ${boardArray[index].조회수}</div>
                             <div> 제목 : ${boardArray[index].제목} </div>
                             <div> 내용 : ${boardArray[index].내용.replaceAll('\n','<br/>')} </div>
-                            <input onclick="(글수정${index})" type="button" value="수정"/>
+                            <input onclick="글수정(${index})" type="button" value="수정"/>
                             <input onclick="글삭제(${index})" type="button" value="삭제"/>
                             `;
                             /* 1. 작성자 : boardArray의 index배열의 수를 /단위로 쪼갠것의 0번째 배열의 있는 수 */
