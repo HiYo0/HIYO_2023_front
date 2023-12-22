@@ -41,7 +41,9 @@ function 글수정(매개변수){
     alert("만드는중")
     /* 유효성검사 */
     let userArray = JSON.parse(localStorage.getItem('userArray'));/* 호출 */
-    const userPw = prompt('비밀번호');
+    const userPw = prompt('비밀번호'); /* 비밀번호 입력받기 */
+
+    userArray[매개변수].pw/* 여기만들다맘~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
 }
