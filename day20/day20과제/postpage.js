@@ -38,7 +38,6 @@ function 글보기(index){
 }
 
 function 글수정(매개변수){
-    alert("만드는중")
     /* 유효성검사 */
     let userArray = JSON.parse(localStorage.getItem('userArray'));/* 호출 */
     const userPw = prompt('비밀번호'); /* 비밀번호 입력받기 */
@@ -46,7 +45,16 @@ function 글수정(매개변수){
     console.log(userArray)
 
     if(userPw == userArray[매개변수].pw){/* 유효성검사 : 비밀번호 확인 */
-        const newTitle = prompt("새로운 게시글 제목을 지정해주세요")
+        const newTitle = prompt("새로운 게시글 제목을 작성해주세요")
+        const newContent = prompt("새로운 게시글 내용을 작성해주세요")
+        userArray[매개변수].title = newTitle;
+        userArray[매개변수].content = newContent;
+
+        localStorage.setItem("userArray",JSON.stringify(userArray)) /* 저장 */
+
+        alert("수정완료")
+
+        글보기(매개변수)
         }
     else{alert("비밀번호를 확인해주세요"); return;}
 
