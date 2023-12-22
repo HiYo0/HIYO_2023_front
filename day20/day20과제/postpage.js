@@ -43,8 +43,14 @@ function 글수정(매개변수){
     let userArray = JSON.parse(localStorage.getItem('userArray'));/* 호출 */
     const userPw = prompt('비밀번호'); /* 비밀번호 입력받기 */
 
-    userArray[매개변수].pw/* 여기만들다맘~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    console.log(userArray)
 
+    if(userPw == userArray[매개변수].pw){/* 유효성검사 : 비밀번호 확인 */
+        const newTitle = prompt("새로운 게시글 제목을 지정해주세요")
+        }
+    else{alert("비밀번호를 확인해주세요"); return;}
+
+    
 
 }
 function 글수정임시( index ){ // 매개변수 : (대상)수정할 식별번호 // 리턴값 : X
