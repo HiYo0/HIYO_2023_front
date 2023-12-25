@@ -21,7 +21,7 @@ localStorage.setItem("categoryCell",JSON.stringify(categoryCell)) /* 저장 */
 localStorage.setItem("productItem",JSON.stringify(productItem)) /* 저장 */
 
 
-
+category출력(1)
 출력하기()
 function 출력하기(){/* 메뉴 */
     const goodsBundleNew = document.querySelector("#goodsBundleNew")/* 출력할 위치 */
@@ -87,14 +87,16 @@ function 출력하기(){/* 메뉴 */
 }
 function category출력(매개변수){
     let categoryCell = JSON.parse(localStorage.getItem('categoryCell'));/* 호출 */
-    const 출력위치 = document.querySelector("goodsCategory")
-    `categoryChoose`
+    const goodsCategory = document.querySelector("#goodsCategory")
+    
     let 출력용 = ``;
 
     for(let a= 0; a<categoryCell.length; a++){
-        출력용 +=`<div onclick="categoryButton(${a})"class="${매개변수==ca}"><a href="#${categoryCell[a].catename}">${categoryCell[a].catename}</a></div>
-                <div><a href="#premium">프리미엄</a></div>
-                <div><a href="#halfnhalf">하프앤하프</a></div>
-                <div><a href="#classic">클래식</a></div>`
-        }
+        출력용 +=`<div onclick="category출력(${a+1})"
+        class="${categoryCell[a].cateno == 매개변수 ? "categoryChoose" :""}">
+        <a href="#${categoryCell[a].catename}">${categoryCell[a].catename}</a></div>`
+        
+    }
+
+    goodsCategory.innerHTML = 출력용
 }
