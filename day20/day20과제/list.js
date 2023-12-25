@@ -16,7 +16,7 @@ function 글목록출력하기(){
                     <th>${ userArray[i].title }</th>  
                     <th>${ userArray[i].id }</th>
                     <th>${ userArray[i].조회수 }</th>
-                </tr>`/* <th>${ userArray[i].id }</th> 조횟수 추가해야함 */
+                </tr>`
     }
     출력위치.innerHTML = html;
     return;
