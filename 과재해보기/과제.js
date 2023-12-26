@@ -31,7 +31,7 @@ function 출력하기(){/* 메뉴 */
     for(let i = 0; i < productItem.length; i++){
         if(productItem[i].cateno == 1){ /* 카테고리 1번만 출력 */
             출력물New += `<div class="goodsForm">
-                        <img src="${productItem[i].img}"/>
+                        <img onclick="구매선택(${productItem[i].productno})" src="${productItem[i].img}"/>
                         <div class="goodsName">${productItem[i].item}</div>
                         <div><span class="markRed">L</span><span>${productItem[i].pirce.toLocaleString()}원</span></div>
             
@@ -46,7 +46,7 @@ function 출력하기(){/* 메뉴 */
     for(let i = 0; i < productItem.length; i++){
         if(productItem[i].cateno == 2){ /* 카테고리 2번만 출력 */
             출력물pre += `<div class="goodsForm">
-                        <img src="${productItem[i].img}"/>
+                        <img onclick="구매선택(${productItem[i].productno})" src="${productItem[i].img}"/>
                         <div class="goodsName">${productItem[i].item}</div>
                         <div><span class="markRed">L</span><span>${productItem[i].pirce.toLocaleString()}원</span></div>
             
@@ -61,7 +61,7 @@ function 출력하기(){/* 메뉴 */
     for(let i = 0; i < productItem.length; i++){
         if(productItem[i].cateno == 3){ /* 카테고리 3번만 출력 */
         출력물half += `<div class="goodsForm">
-                        <img src="${productItem[i].img}"/>
+                        <img onclick="구매선택(${productItem[i].productno})" src="${productItem[i].img}"/>
                         <div class="goodsName">${productItem[i].item}</div>
                         <div><span class="markRed">L</span><span>${productItem[i].pirce.toLocaleString()}원</span></div>
             
@@ -76,7 +76,7 @@ function 출력하기(){/* 메뉴 */
     for(let i = 0; i < productItem.length; i++){
         if(productItem[i].cateno == 4){ /* 카테고리 3번만 출력 */
         출력물classic += `<div class="goodsForm">
-                        <img src="${productItem[i].img}"/>
+                        <img onclick="구매선택(${productItem[i].productno})" src="${productItem[i].img}"/>
                         <div class="goodsName">${productItem[i].item}</div>
                         <div><span class="markRed">L</span><span>${productItem[i].pirce.toLocaleString()}원</span></div>
             
@@ -102,6 +102,6 @@ function category출력(매개변수){
     goodsCategory.innerHTML = 출력용
 }
 
-function clickMenu(){
-    
+function 구매선택(매개변수){
+    console.log(매개변수+"실행됨")
 }
