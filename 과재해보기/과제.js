@@ -33,7 +33,7 @@ function 출력하기(){/* 메뉴 */
             출력물New += `<div class="goodsForm">
                         <img src="${productItem[i].img}"/>
                         <div class="goodsName">${productItem[i].item}</div>
-                        <div><span class="markRed">L</span><span>${productItem[i].pirce.toLocaleString()}원</span><span class="markRed">M</span><span>${productItem[i].pirce.toLocaleString()}원</span></div>
+                        <div><span class="markRed">L</span><span>${productItem[i].pirce.toLocaleString()}원</span></div>
             
                         <div class="goodsEx">${productItem[i].설명}</div>
                     </div>`}
@@ -48,7 +48,7 @@ function 출력하기(){/* 메뉴 */
             출력물pre += `<div class="goodsForm">
                         <img src="${productItem[i].img}"/>
                         <div class="goodsName">${productItem[i].item}</div>
-                        <div><span class="markRed">L</span><span>${productItem[i].pirce.toLocaleString()}원</span><span class="markRed">M</span><span>${productItem[i].pirce.toLocaleString()}원</span></div>
+                        <div><span class="markRed">L</span><span>${productItem[i].pirce.toLocaleString()}원</span></div>
             
                         <div class="goodsEx">${productItem[i].설명}</div>
                     </div>`}
@@ -63,7 +63,7 @@ function 출력하기(){/* 메뉴 */
         출력물half += `<div class="goodsForm">
                         <img src="${productItem[i].img}"/>
                         <div class="goodsName">${productItem[i].item}</div>
-                        <div><span class="markRed">L</span><span>${productItem[i].pirce.toLocaleString()}원</span><span class="markRed">M</span><span>${productItem[i].pirce.toLocaleString()}원</span></div>
+                        <div><span class="markRed">L</span><span>${productItem[i].pirce.toLocaleString()}원</span></div>
             
                         <div class="goodsEx">${productItem[i].설명}</div>
                     </div>`}
@@ -78,7 +78,7 @@ function 출력하기(){/* 메뉴 */
         출력물classic += `<div class="goodsForm">
                         <img src="${productItem[i].img}"/>
                         <div class="goodsName">${productItem[i].item}</div>
-                        <div><span class="markRed">L</span><span>${productItem[i].pirce.toLocaleString()}원</span><span class="markRed">M</span><span>${productItem[i].pirce.toLocaleString()}원</span></div>
+                        <div><span class="markRed">L</span><span>${productItem[i].pirce.toLocaleString()}원</span></div>
             
                         <div class="goodsEx">${productItem[i].설명}</div>
                     </div>`}

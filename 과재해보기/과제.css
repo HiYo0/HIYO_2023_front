@@ -47,15 +47,21 @@
     bottom: 0px;
     height: 250px;
 }
-    #cartTop{display: flex; justify-content: space-between;}
-    #cartBottom{display: flex;}
+    #cartTop{height: 50PX; padding: 0 10px; display: flex; justify-content: space-between; align-items: center; font-weight: bold;}
+    #cartBottom{height: 150px; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center;}
+    .cartInfo{background-color: #f28D35; width: 90%; border-radius: 5px; display: flex; justify-content: space-around; font-weight: bold; }
+    
+    
     #cartBtns{
-        
-        display: flex; justify-content: space-between
+        position: relative;
+        display: flex; justify-content: space-around;
     }
+        
     #cartBtns>input{
         border: none; 
-        background-color: #f2b872; 
+        border-radius: 20px;
         width: 45%;
-        
+        height: 40px;   
     }
+    #buttonBuy{background-color: #f2b872;}
+    #buttonCencle{background-color: #f28D35;}

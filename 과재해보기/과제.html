@@ -58,13 +58,17 @@
                 </div>
 
                 <div id="cartBottom"><!-- 2번쨰줄  -->
-                    <div>제품명</div><!-- 장바구니의 제품들이 출력되는구역 -->
-                    <div>가격명</div>
+                    <div class="cartInfo">
+                        <!-- 장바구니의 제품들이 출력되는구역 -->
+                        <div>제품명</div>
+                        <div>가격</div>
+                    </div>
+                    
                 </div>
             </div>
             <div id="cartBtns"><!-- 3번째 줄 -->
-                <input onclick="cartCencle()" type="button" value="취소하기">
-                <input type="button" value="주문하기">
+                <input id="buttonBuy" type="button" value="주문하기">
+                <input id="buttonCencle" onclick="cartCencle()" type="button" value="취소하기">
             </div>
         </div>
         
