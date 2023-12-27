@@ -65,10 +65,11 @@ document.addEventListener('DOMContentLoaded',function(){
     
     // 이벤트 연결
     addButton.addEventListener('click', addTodo)
-    input.addEventListener('keyup', function(event){
+        input.addEventListener('keyup', function(event){
         // 입력 양식에서 enter 키를 누르면 바로 addTodo() 함수를 호출
+        console.log(event)
         const ENTER = 13
-        if(event.keycode === ENTER ){
+        if(event.keyCode === ENTER ){
             addTodo()
         }
     });
