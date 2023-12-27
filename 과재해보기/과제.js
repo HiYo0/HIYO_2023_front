@@ -1,5 +1,5 @@
 
-const 임시장바구니 =[{제품명 : "asdasdasd", 가격 : 30000 ,사이즈 : "L or M"}]
+const 임시장바구니 =[]
 const cart =[];
 const categoryCell = [{cateno:1,catename:"New"},{cateno:2,catename:"프리미엄"},{cateno:3,catename:"하프앤하프"},{cateno:4,catename:"클래식"}]
 const productItem = [
@@ -18,6 +18,7 @@ const productItem = [
     {productno: 13,item : "리코타 페퍼로니 킹덤",cateno : 4,pirce : 29900,img :"img/리코타 페퍼로니 킹덤.jpg",설명 : "#[도미노x슈퍼 마리오]페퍼로니 가득한 도미노만의 버섯왕국이 눈앞에!" },
     {productno: 14,item : "포테이토",cateno : 4,pirce : 27900,img :"img/포테이토.jpg",설명 : "#도미노피자 No.1 레전드" }
 ]
+
 localStorage.setItem("categoryCell",JSON.stringify(categoryCell)) /* 저장 */
 localStorage.setItem("productItem",JSON.stringify(productItem)) /* 저장 */
 
@@ -102,6 +103,23 @@ function category출력(매개변수){
     goodsCategory.innerHTML = 출력용
 }
 
-function 구매선택(매개변수){
+function 구매선택(매개변수){/* 매개변수 = 제품번호 */
     console.log(매개변수+"실행됨")
+
+    let 출력위치 = document.querySelector('#cartBottom')
+    let productItem = JSON.parse(localStorage.getItem('productItem'));/* 호출 */
+    
+    let basket = ``;
+    for(let i= 0; i<productItem.length; i++){
+        if(productItem[i].productno==매개변수){
+            basket += `
+                    <div class="cartInfo">
+                        <div>${productItem[i].item}</div>
+                        <div>${productItem[i].pirce.toLocaleString()} 원</div>
+                    </div>`
+        }
+    }
+    임시장바구니.push(basket)
+
+    출력위치.innerHTML = 임시장바구니;
 }
