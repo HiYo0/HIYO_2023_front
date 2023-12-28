@@ -1,0 +1,43 @@
+.feed{
+    border: 1px solid #e8e8e8;
+    border-radius: 20px;
+    padding: 15px;margin: 30px 0px;
+}
+    .feed img{
+        width: 100%; height: 300px;
+        /* 고정사이즈 사용시 : 원본사이즈 비율이 깨질수 있음. */
+        object-fit: cover;/* 비율유지하고 사진좀 짤림 */
+        border-radius: 20px;
+    }
+    /* .contentBox{} */
+
+        .date{ /* 게시글/댓글/작성날짜 */
+            font-size: 9px;
+            margin: 10px 0px;
+        }
+
+        .contentBox > .content{ /* 게시물 내용 */
+            font-size: 16px; margin: 10px 0px;
+        }
+        .btnBox{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+            .btnBox button{ /* 버튼들 */
+                background-color: none;
+                border-radius: 20px;
+                border: 1px solid #e8e8e8;
+                padding: 5px ; width: 50px;
+                font-size: 10px;
+            }
+    .replyBox{
+        border-top: 1px solid #e8e8e8;
+        padding-top: 20px; margin-top: 20px;
+    }
+        .reply{
+            display: flex;
+            justify-content: space-between;
+            font-size: 10px;
+        }
+        .reply button{ background-color: none; border: none; cursor : pointer;}
