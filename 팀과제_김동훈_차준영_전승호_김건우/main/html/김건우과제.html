@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/김건우과제.css'>
+    
+</head>
+<body>
+    <div id="wrap">
+        
+
+        <div>
+            <div id="메인페이지로가기">
+                <a href="전승호과제메뉴페이지.html"><img src="../../img/도미노피자_로고_(1).png"/></a>
+            </div>
+        </div>
+
+
+        <div>
+            <h1>관리자 페이지</h1>
+                <div id="cate_box">
+
+                       <h3>카테고리 등록</h3>
+
+                        <div id="cate_input">
+                            
+                            <input id="cateNo" type="number" />
+                            <input id="cateName" type="text" />
+                        </div>   
+
+                        <div id="cate_button">
+
+                            <input onclick="cateWhite()" type="button" value="등록"/>
+                            
+
+                        </div>
+                            
+                </div>
+
+                <div id="cate_table">
+
+                    <table border="2">
+                        <thead>
+                            <th>카테고리번호</th>
+                            <th>카테고리명</th>
+                            <th>비고</th>
+                        </thead>
+                        <tbody id="출력위치">
+                            <td>1</td>
+                            <td>안녕하세요. 피자입니다.</td>
+                            <td><input onclick="cateDelete()" type="button" value="삭제"/></td>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div id="menu_box">
+
+                    <h3>메뉴 등록</h3>
+                    <div id="menu_can">
+                    제품 번호 <input id="productNo" type="number" /> <br/>    
+                    제품 이름 <input id="productName" type="text" /> <br/>
+                    카테고리 번호 <input id="cateNo" type="number" /> <br/>
+                    가격 <input id="pprice" type="text" /> <br/>
+                    이미지 <input id="menuImg" type="file"> <br/>
+                    설명 <textarea id="textArea"></textarea><br/><br/>
+                
+                    <div id="cate_button2">    
+                        <input onclick="menuWhite()" type="button" value="등록"/>
+                    </div>
+                    
+                </div>
+        </div>
+
+        <!-- 전승호의 수정라인 ㅁㅁㅁㅁㅁㅁㅁ -->
+        <table id="menuTable" border="2">
+            <thead id="menuHead">
+                <tr id="menuTr">
+                    <th id="제품번호2">제품번호</th>
+                    <th id="제품명2">제품명</th>
+                    <th id="카테고리번호2">카테고리번호</th>
+                    <th id="가격2">가격</th>
+                    <th id="이미지이름2">이미지이름</th>
+                    <th id="설명2">설명</th>
+                    <th id="비고2">비고</th>
+                </tr>
+            </thead>
+            <tbody id="menuTbody">
+                <tr class="menuCell">
+                    
+                </tr>
+            </tbody>
+        </table>
+        <!-- 전승호의 수정라인 ㅁㅁㅁㅁㅁㅁㅁ -->
+      
+
+        <div>
+            <span id="manyMoney"><!-- JS 총매출나오는 구간 -->총매출 : 원</span>
+
+        </div>
+
+        
+
+
+
+
+
+    </div>
+    <script src='../js/김건우과제.js'></script>
+</body>
+</html>
